@@ -3,7 +3,8 @@ Imagine that information stored on the blockchain for transparency and so the tr
 
 Concept Overview:
 
-Blockchain-Based Pet Medical History and Vaccination Tracker built on  StarkNetImagine building a decentralized, secure, and accessible system for storing and managing pet medical histories, vaccinations, and upcoming vaccination schedules.
+Blockchain-Based Pet Medical History and Vaccination Tracker built on  StarkNet. 
+Imagine building a decentralized, secure, and accessible system for storing and managing pet medical histories, vaccinations, and upcoming vaccination schedules.
 The system leverages StarkNet, a Layer 2 scaling solution for Ethereum, to store the data on the blockchain, ensuring immutability, transparency, and security. The information is tied to a scannable tag (e.g., QR code or NFC tag) that can be attached to the pet's collar or ID tag. 
 This tag allows anyone with a smartphone or scanner to access the pet's medical information securely.How It Works1.
 Data Entry via Hospital Software:   
