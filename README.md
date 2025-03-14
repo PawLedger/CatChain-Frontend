@@ -111,5 +111,39 @@ How It Works
   transparency, and convenience make this a compelling product for pet owners, veterinarians, and pet care facilities alike. 
   With proper education and user-friendly design, this system has the potential to revolutionise how pet medical records are 
   managed and accessed.
+              Contribution Guide
+Tech Stack
+
+Frontend
+Framework: Next.js (React-based) TypeScript
+Styling: Tailwind CSS 
+
+Smart Contracts
+
+Language: Cairo for Starknet contract development
+
+Backend:
+
+Framework: NestJS for scalable and modular backend development
+Database: PostgreSQL for storing user data
+ORM: TypeORM for managing database models and migrations.
+
+Deployment
+Frontend Hosting**: Vercel 
+Backend Hosting: AWS, Heroku
+Blockchain: Starknet for smart contract deployment
+
+Installation
+Clone the Repository. we have four repos holding code for the following; 
+
+Frontend: https://github.com/DogStark/pet-medical-tracka.git
+Backend:  https://github.com/DogStark/PetMedTraka-Backend.git
+Contracts: https://github.com/DogStark/PetMedTracka-Contracts.git
+MobileApp: https://github.com/DogStark/PetMedTracka-MobileApp.git
+
+
+more issues are being created to handle different features in all repos.
+Thanks for your interest in contributing. 
+
 
 
