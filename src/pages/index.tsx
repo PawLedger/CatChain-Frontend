@@ -6,7 +6,7 @@ export default function Home() {
       <Header />
       <div className="flex items-center justify-center">
         <h1 className="text-4xl font-bold text-blue-600">
-          Welcome to PetMedTrack!
+          Welcome to PetChain
         </h1>
       </div>
     </div>
