@@ -142,7 +142,155 @@ Contracts: https://github.com/DogStark/PetMedTracka-Contracts.git
 MobileApp: https://github.com/DogStark/PetMedTracka-MobileApp.git
 
 
-more issues are being created to handle different features in all repos.
+
+ UI/UX DESIGNER SCOPE
+
+
+Project Overview
+
+PetChain is a blockchain-based platform that securely stores and manage pet medical records, vaccination history, and treatment schedules. 
+
+It consists of:
+
+Hospital/Veterinary Dashboard – For vet facilities to input and manage pet health records.
+
+Pet Owner Dashboard – For pet owners to view their pet’s medical history, upcoming vaccinations, and treatment reminders.
+
+The UI/UX designer will create an intuitive, visually appealing, and user-friendly interface for both sides of the application.
+
+Scope of Work
+
+1. Research & Discovery
+Conduct user research (interviews/surveys) with:
+
+Veterinarians & hospital staff (primary users of the hospital dashboard).
+
+Pet owners (primary users of the owner dashboard).
+
+Analyze competitor platforms (e.g., PetDesk, VetLink) for UX best practices.
+
+Define user personas and user journeys for both vets and pet owners.
+
+2. Wireframing & Prototyping
+Low-fidelity wireframes (Balsamiq, Figma, or Adobe XD) for:
+
+Hospital Dashboard:
+
+Pet registration & medical record entry.
+
+Vaccination & treatment scheduling.
+
+Blockchain data verification UI.
+
+Pet Owner Dashboard:
+
+Pet profile & medical history view.
+
+QR code/NFC scanning for emergency access.
+
+Vaccination reminders & appointment booking.
+
+High-fidelity prototypes with:
+
+Interactive elements (buttons, forms, navigation).
+
+Responsive design (desktop, tablet, mobile).
+
+3. Visual Design & Branding
+Define a color scheme (pet-friendly, professional yet warm).
+
+Choose typography (readable, modern sans-serif fonts).
+
+Design icons, illustrations, and UI components (buttons, cards, modals).
+
+Ensure accessibility (WCAG compliance for color contrast, text size).
+
+4. Hospital Dashboard (Veterinary Side)
+Key Screens to Design:
+
+Login/Authentication (vet staff access control).
+
+Pet Registration Form (input fields for breed, age, medical conditions).
+
+Medical Record Entry (structured input for treatments, prescriptions).
+
+Vaccination Scheduler (calendar integration, reminders).
+
+Blockchain Data Verification (visual confirmation of on-chain records).
+
+Emergency Access View (quick access to critical pet info).
+
+5. Pet Owner Dashboard
+Key Screens to Design:
+
+Pet Profile Overview (summary of health records, recent visits).
+
+QR/NFC Scanner (for emergency access to pet records).
+
+Vaccination Tracker (upcoming/due vaccinations with alerts).
+
+Appointment Booking (integration with vet clinics).
+
+Medical History Timeline (visual timeline of treatments, tests).
+
+6. Mobile Responsiveness & Cross-Platform Design
+Ensure seamless experience across:
+
+Desktop (for hospital staff managing records).
+
+Mobile (for pet owners on-the-go).
+
+Design mobile-first where necessary (e.g., QR scanning feature).
+
+7. Usability Testing & Iteration
+Conduct user testing sessions with:
+
+Veterinarians (testing hospital dashboard workflows).
+
+Pet owners (testing ease of access to records).
+
+Gather feedback and refine UI/UX based on findings.
+
+8. Handoff to Developers
+Provide design specs (Figma/XD links, style guides).
+
+Export SVG/PNG assets for icons, illustrations.
+
+Ensure developer-friendly documentation (spacing, breakpoints, interactions).
+
+Suggested Additions;
+
+Dark/Light Mode Toggle – For better accessibility.
+
+Multilingual Support – If targeting global users.
+
+Pet ID Badge Generator – For owners to print pet tags with QR codes.
+
+Emergency Mode – Quick-access UI for vets during critical care.
+
+Deliverables
+✅ User research report & personas
+✅ Low & high-fidelity wireframes (Figma/XD links)
+✅ Interactive prototype (for both dashboards)
+✅ UI component library & style guide
+✅ Usability test reports & iterations
+✅ Final design assets (icons, illustrations, etc.)
+
+
+Success Metrics
+
+Hospital Staff: Reduced time to input/access records.
+
+Pet Owners: Increased engagement with vaccination reminders.
+
+Overall: High user satisfaction (measured via surveys/NPS).
+
+This scope ensures a user-centric, functional, and visually cohesive design for both vets and pet owners. Let me know if you'd like to adjust priorities or add features! 
+
+
+
+
+NB; More issues are being created to handle different features in all repos.
 Thanks for your interest in contributing. 
 
 
