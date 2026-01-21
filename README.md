@@ -32,20 +32,43 @@ Pets get a scannable tag for quick access to key medical details. This tag can a
 * **BlockChain:** Rust, StellarJs
 
 ##  Getting Started
-This repository serves as the main repo, specifically tailored for **FRONTEND** contributions to the PetChain project.
 
-To get this project up and running locally, ensure the following are installed on your system:
+### Frontend Development (Next.js)
+This repository serves as the main repo for **FRONTEND** contributions to the PetChain project.
+
+To get the frontend running locally:
 
 - Node.js (v16 or higher)
 - npm or yarn
 - Git
-- Docker (optional, for DB or backend setup)
+
+### Backend Development (NestJS)
+**IMPORTANT:** This repository also contains a `backend/` folder with a complete NestJS API.
+
+**For Backend Contributors:**
+- Navigate to `backend/` folder
+- See `backend/HIGH_QUALITY_ISSUES.md` for 17 open NestJS development issues
+- Follow `backend/README.md` for setup instructions
+- Requires PostgreSQL, Redis, and Docker
+
+**Note:** Please distinguish between:
+- **Frontend issues:** Next.js/React (root folder)
+- **Backend issues:** NestJS/API (backend/ folder)
 
 ##  Contributing 
-To contribute effectively, make sure to read through our [**Contribution Guide**](./contributing.md), which outlines 
-*  Code of Conduct
-*  Step-by-step contribution process 
-*  Open tasks and other ways to get involved
+
+### Frontend Contributions (Next.js)
+For frontend development, read our [**Contribution Guide**](./contributing.md)
+
+### Backend Contributions (NestJS)
+**NEW:** We have 17 high-quality backend issues available!
+- Check `backend/HIGH_QUALITY_ISSUES.md` for detailed NestJS development tasks
+- Issues include authentication, medical records, Stellar integration, and more
+- Each issue has clear acceptance criteria and technical specifications
+
+**Important:** Make sure you're working on the correct technology:
+- **Frontend:** Next.js issues (root folder)
+- **Backend:** NestJS issues (backend/ folder)
 
 ##  Related Repositories
 To work on other parts of the project, you can find the related repositories below:
