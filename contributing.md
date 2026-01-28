@@ -1,78 +1,153 @@
-# CONTRIBUTION GUIDE
-We appreciate your interest in contributing to PetChain! Please follow these guidelines to ensure a smooth collaboration and maintain the integrity of the project.
+# Contributing to PetChain
 
-### 1. **Code of Conduct**
-  - When applying to work on an issue:
+Thank you for your interest in contributing to PetChain! This guide will help you get started.
 
-    * Provide a brief background about yourself.
-    * Explain how you plan to approach the issue.
-    * Share your estimated time of arrival (ETA) for completing the task. 
-- If you cannot complete the task within your ETA + 1 day, you must inform me on Telegram [@llins_x](https://t.me/llins_x). Failure to do so will result in you being unassigned from the issue.
- 
- ### 2. **PR Validation**
-    - Ensure there are no errors before submitting your PR.
-    - If any checks fail on your PR, you must fix them before it can be merged.
-    
+## 🚀 Quick Start
 
-### 3. **Steps to Contribute**
-   1. **Fork the Repo** 
-Click the "Fork" button at the top right of this repository to create a copy under your GitHub account.
-  
-   2. **Clone the Forked Repo** 
-Open your terminal and run the following command to clone your forked version:
-      ```bash
-      git clone https://github.com/your-username/repo-name
-      ```
-      Replace "your-username" and "repo-name" with your username and the repo you are working on respectively. 
-  
-  3. **Open in VS Code**
-If you use VS Code, navigate to the project directory and open it:
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+- Git
+- PostgreSQL (for backend)
+- Docker (optional)
 
-     ```sh
-     code .
-     ```
-   4. **Make Your Changes** 
-*  Implement your changes
-*  Ensure your code does not break existing functionality.
-*  Test your changes before committing. 
-  
-  6. **Commit Your Changes:** Commit your changes with a clear and concise message.
-     ```sh
-      git commit -m "Add: Short description of changes"
-     ```
-   7. **Push to Your Fork** 
-      ```bash
-      git push origin main
-      ```
-   8. **Create a Pull Request:** Submit a pull request to the main repository from your fork. Make sure your pull request has a clear description of the changes and the problem it solves.
+### Setup
 
-### 4. Pending Work
-Help us bring PetChain to life! Below are key areas where contributors can get involved:
+1. **Fork and Clone**
+   ```bash
+   git clone https://github.com/your-username/petChain-Frontend.git
+   cd petChain-Frontend
+   ```
 
-🔍 Research & Discovery
-* Interview vets & pet owners for dashboard needs.
-* Analyze platforms like PetDesk, VetLink for UX insights.
-* Create user personas & journeys.
+2. **Frontend Setup**
+   ```bash
+   npm install
+   cp .env.example .env.local
+   npm run dev
+   ```
 
-✏️ Wireframes for:
+3. **Backend Setup**
+   ```bash
+   cd backend
+   npm install
+   cp .env.example .env
+   npm run start:dev
+   ```
 
-   - Hospital Dashboard (pet reg, records, vaccine scheduler, blockchain UI).
-   - Owner Dashboard (pet profile, QR/NFC scan, reminders).
+## 📋 Issue Selection
 
-🎨 Visual Design & Branding: Define brand colors, fonts, icons, and UI components.
+### Frontend Issues (Next.js)
+- Look for `frontend` and `nextjs` labels
+- Work in root directory
+- Focus on UI/UX components
 
-💻 Key Screens to Design
-* Hospital Dashboard: Login/Auth, Pet Registration, Medical Entry, Vaccine Scheduler, Blockchain View, Emergency Mode.
-* Owner Dashboard: Pet Profile, QR/NFC Scanner, Vaccination Tracker, Appointments, Medical Timeline.
+### Backend Issues (NestJS)
+- Look for `backend` and `nestjs` labels  
+- Work in `backend/` directory
+- Check `backend/HIGH_QUALITY_ISSUES.md` for detailed tasks
 
-📱 Cross-Platform Responsiveness
-* Design for desktop (vets) and mobile (owners).
-* Mobile-first approach for QR features.
+### Difficulty Levels
+- 🟢 **Beginner**: Good first issues, basic features
+- 🟡 **Intermediate**: Moderate complexity, some experience needed
+- 🔴 **Advanced**: Complex features, significant experience required
 
-🌟 Suggested Features
-* Dark/Light Mode Toggle.
-* Multilingual Support.
-* Pet ID Badge Generator.
-* Emergency Mode UI.
+## 🔧 Development Workflow
 
-Thanks for contributing!
+### Branch Naming
+- `feature/frontend-component-name`
+- `feature/backend-api-endpoint`
+- `fix/bug-description`
+- `docs/update-readme`
+
+### Commit Messages
+Use conventional commits:
+```
+feat(frontend): add pet profile component
+fix(backend): resolve authentication bug
+docs: update API documentation
+test: add unit tests for user service
+```
+
+### Code Standards
+
+**Frontend (Next.js)**
+- TypeScript strict mode
+- Tailwind CSS for styling
+- Responsive design (mobile-first)
+- Component documentation
+
+**Backend (NestJS)**
+- TypeScript strict mode
+- DTOs for validation
+- Unit tests (80%+ coverage)
+- API documentation
+
+## 🧪 Testing
+
+### Frontend
+```bash
+npm run test
+npm run test:watch
+npm run build  # Ensure build passes
+```
+
+### Backend
+```bash
+cd backend
+npm run test
+npm run test:e2e
+npm run build
+```
+
+## 📝 Pull Request Process
+
+1. **Before Submitting**
+   - [ ] Code follows style guidelines
+   - [ ] Tests pass locally
+   - [ ] Build succeeds
+   - [ ] Documentation updated
+
+2. **PR Description**
+   - Link to related issue
+   - Describe changes made
+   - Include screenshots (if UI changes)
+   - List breaking changes (if any)
+
+3. **Review Process**
+   - Maintainer review required
+   - Address feedback promptly
+   - Keep PR focused and small
+
+## 🛡️ Security
+
+- Never commit secrets or API keys
+- Use environment variables
+- Follow security best practices
+- Report vulnerabilities privately
+
+## 📞 Getting Help
+
+- **Discord**: [PetChain Community](https://discord.gg/petchain)
+- **Telegram**: [@PetChain Telegram Group](https://t.me/+Jw8HkvUhinw2YjE0)
+- **Issues**: Create a GitHub issue
+- **Email**: Contact [@llins_x](https://t.me/llins_x)
+
+## 🎯 Issue Labels
+
+- `good-first-issue`: Perfect for newcomers
+- `help-wanted`: Community help needed
+- `priority-high`: Urgent issues
+- `frontend`: Next.js related
+- `backend`: NestJS related
+- `bug`: Something isn't working
+- `enhancement`: New feature request
+- `documentation`: Documentation improvements
+
+## 📜 Code of Conduct
+
+- Be respectful and inclusive
+- Help others learn and grow
+- Focus on constructive feedback
+- Follow project guidelines
+
+Thank you for contributing to PetChain! 🐾
