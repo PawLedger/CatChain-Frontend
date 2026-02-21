@@ -12,19 +12,19 @@ const FEATURES = [
     title: 'Always-Available Records',
     desc: 'Medical history stored on Stellar—tamper-proof, permanent, and accessible anytime.',
     icon: '🔗',
-    details: 'All medical records are securely stored on Stellar, ensuring they are tamper-proof and always accessible. No more lost or scattered records—access your pet's health history from anywhere, at any time.'
+    details: 'All medical records are securely stored on Stellar, ensuring they are tamper-proof and always accessible. No more lost or scattered records—access your pet\'s health history from anywhere, at any time.'
   },
   {
     title: 'Controlled Access',
     desc: 'Owners control who sees what. Share vaccination status or give full access to a vet.',
     icon: '🔒',
-    details: 'You decide who can view your pet's records. Share only vaccination status publicly, or grant full access to a trusted vet. Your pet's privacy and safety are always in your hands.'
+    details: 'You decide who can view your pet\'s records. Share only vaccination status publicly, or grant full access to a trusted vet. Your pet\'s privacy and safety are always in your hands.'
   },
   {
     title: 'Smart Notifications',
     desc: 'Automatic alerts for vaccinations and check-ups. Never miss a date.',
     icon: '📅',
-    details: 'Receive timely reminders for upcoming vaccinations, check-ups, and treatments. Stay on top of your pet's health schedule with smart, automated notifications.'
+    details: 'Receive timely reminders for upcoming vaccinations, check-ups, and treatments. Stay on top of your pet\'s health schedule with smart, automated notifications.'
   },
   {
     title: 'Vet-Ready Integration',
@@ -36,7 +36,7 @@ const FEATURES = [
     title: 'Offline Mode & Privacy',
     desc: 'View essential info offline. Advanced cryptography keeps data secure—even on-chain.',
     icon: '🛡️',
-    details: 'Access critical information even without an internet connection. Advanced cryptography, including zero-knowledge proofs, ensures your pet's sensitive data remains private and secure—even on the blockchain.'
+    details: 'Access critical information even without an internet connection. Advanced cryptography, including zero-knowledge proofs, ensures your pet\'s sensitive data remains private and secure—even on the blockchain.'
   },
 ];
 
@@ -69,7 +69,7 @@ export default function Home() {
                 Powered by Stellar Blockchain
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Your Pet's Medical Records,
+                Your Pet&apos;s Medical Records,
                 <span className="text-blue-600"> Always Accessible</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -119,7 +119,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
-            <p className="text-xl text-gray-600">Three simple steps to secure your pet's health data</p>
+            <p className="text-xl text-gray-600">Three simple steps to secure your pet&apos;s health data</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -135,7 +135,7 @@ export default function Home() {
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
               <h3 className="text-xl font-semibold mb-2">Stay Updated</h3>
-              <p className="text-gray-600">Get smart reminders and control who accesses your pet's information</p>
+              <p className="text-gray-600">Get smart reminders and control who accesses your pet&apos;s information</p>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 px-4 bg-blue-600">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to Secure Your Pet's Health Data?</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Ready to Secure Your Pet&apos;s Health Data?</h2>
           <p className="text-xl text-blue-100 mb-8">Join the decentralized pet health revolution</p>
           <div className="flex gap-4 justify-center">
             <a href="https://github.com/DogStark/petChain-Frontend" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg">
