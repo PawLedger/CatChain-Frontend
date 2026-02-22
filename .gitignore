@@ -2,6 +2,7 @@
 node_modules/
 /.pnp
 .pnp.js
+.yarn/
 
 # Testing
 /coverage
@@ -29,6 +30,8 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # IDE
 .vscode/
@@ -36,9 +39,12 @@ yarn-error.log*
 *.swp
 *.swo
 *~
+*.sublime-*
 
 # OS
 Thumbs.db
+.AppleDouble
+.LSOverride
 
 # Backend specific
 backend/node_modules/
@@ -50,3 +56,9 @@ backend/coverage/
 *.tmp
 *.temp
 .cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Vercel
+.vercel
