@@ -45,7 +45,7 @@ function QRCard({
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `petchain-qr-${qr.qrCodeId}.svg`;
+    a.download = `catchain-qr-${qr.qrCodeId}.svg`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -313,7 +313,7 @@ export default function QRCodePage() {
   return (
     <ProtectedRoute>
       <Head>
-        <title>QR Code Tags — PetChain</title>
+        <title>QR Code Tags — CatChain</title>
         <style type="text/css" media="print">
           {`
             @page { size: auto;  margin: 10mm; }

@@ -68,7 +68,7 @@ describe('useAnnouncement hook', () => {
 
     expect(dispatchEvent).toHaveBeenCalledWith(
       expect.objectContaining({
-        type: 'petchain-announcement',
+        type: 'catchain-announcement',
         detail: expect.objectContaining({
           message: 'Pet saved successfully.',
           severity: 'success',
@@ -91,7 +91,7 @@ describe('useAnnouncement hook', () => {
     fireEvent.click(screen.getByTestId('announce-error'));
 
     const announcementEvents = dispatchEvent.mock.calls.filter(
-      ([e]) => (e as CustomEvent).type === 'petchain-announcement',
+      ([e]) => (e as CustomEvent).type === 'catchain-announcement',
     );
     const ids = announcementEvents.map(
       ([e]) => (e as CustomEvent).detail.id,
@@ -114,7 +114,7 @@ describe('useAnnouncement hook', () => {
 
     // Only one event should have been dispatched for the duplicate message
     const announcementEvents = dispatchEvent.mock.calls.filter(
-      ([e]) => e.type === 'petchain-announcement',
+      ([e]) => e.type === 'catchain-announcement',
     );
     expect(announcementEvents.length).toBe(1);
   });
@@ -141,7 +141,7 @@ describe('useAnnouncement hook', () => {
     Date.now = realDateNow;
 
     const announcementEvents = dispatchEvent.mock.calls.filter(
-      ([e]) => e.type === 'petchain-announcement',
+      ([e]) => e.type === 'catchain-announcement',
     );
     expect(announcementEvents.length).toBe(2);
   });
@@ -162,7 +162,7 @@ describe('useAnnouncement hook', () => {
     fireEvent.click(screen.getByTestId('announce-info'));
 
     const announcementEvents = dispatchEvent.mock.calls.filter(
-      ([e]) => (e as CustomEvent).type === 'petchain-announcement',
+      ([e]) => (e as CustomEvent).type === 'catchain-announcement',
     );
     const severities = announcementEvents.map(
       ([e]) => (e as CustomEvent).detail.severity,

@@ -52,7 +52,7 @@ export function useAnnouncement() {
       // Dispatch a custom event so the announcer component can react.
       if (typeof window !== 'undefined') {
         window.dispatchEvent(
-          new CustomEvent<Announcement>('petchain-announcement', { detail: announcement }),
+          new CustomEvent<Announcement>('catchain-announcement', { detail: announcement }),
         );
       }
     },

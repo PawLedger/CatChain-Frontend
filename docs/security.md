@@ -1,6 +1,6 @@
 # Security Testing and Audit Workflow
 
-This document defines the minimum repeatable security process for PetChain. It is intentionally practical: the repository runs automated dependency and static analysis checks in CI, while the team follows a lightweight but explicit manual review, penetration testing, and incident response process.
+This document defines the minimum repeatable security process for CatChain. It is intentionally practical: the repository runs automated dependency and static analysis checks in CI, while the team follows a lightweight but explicit manual review, penetration testing, and incident response process.
 
 ## Security Tooling
 

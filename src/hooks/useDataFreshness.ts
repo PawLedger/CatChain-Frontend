@@ -4,7 +4,7 @@
  * Tracks the last successful refresh timestamp for each dashboard data category
  * (profile, medical history, emergency) and exposes per-category refresh actions.
  *
- * Timestamps are persisted to localStorage (key: `petchain_freshness_<category>`)
+ * Timestamps are persisted to localStorage (key: `catchain_freshness_<category>`)
  * with a sessionStorage fallback for environments that block localStorage.
  *
  * Authorisation and consent remain entirely on the backend; this hook only calls
@@ -47,7 +47,7 @@ export interface UseDataFreshnessReturn {
 // Storage helpers (localStorage → sessionStorage fallback)
 // ---------------------------------------------------------------------------
 
-const STORAGE_KEY_PREFIX = 'petchain_freshness_';
+const STORAGE_KEY_PREFIX = 'catchain_freshness_';
 
 function readTimestamp(category: DataCategory): string | null {
   const key = `${STORAGE_KEY_PREFIX}${category}`;
@@ -80,9 +80,9 @@ function writeTimestamp(category: DataCategory, iso: string): void {
 // ---------------------------------------------------------------------------
 
 const CATEGORY_SOURCES: Record<DataCategory, string> = {
-  profile: 'PetChain User API',
-  medicalHistory: 'PetChain Medical Records API',
-  emergency: 'PetChain Pet Emergency API',
+  profile: 'CatChain User API',
+  medicalHistory: 'CatChain Medical Records API',
+  emergency: 'CatChain Pet Emergency API',
 };
 
 function buildInitialState(): FreshnessState {

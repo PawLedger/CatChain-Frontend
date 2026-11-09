@@ -9,18 +9,18 @@ export function PWAInstallPrompt({ onInstall, onDismiss }: PWAInstallPromptProps
   return (
     <div
       role="dialog"
-      aria-label="Install PetChain app"
+      aria-label="Install CatChain app"
       className="fixed bottom-4 left-4 right-4 z-50 max-w-sm mx-auto bg-white rounded-2xl shadow-2xl border border-blue-100 p-4 flex items-center gap-3 animate-slide-up"
     >
       <Image
-        src="/PETCHAIN.jpeg"
-        alt="PetChain"
+        src="/CATCHAIN.jpeg"
+        alt="CatChain"
         width={48}
         height={48}
         className="rounded-xl flex-shrink-0"
       />
       <div className="flex-1 min-w-0">
-        <p className="font-semibold text-gray-900 text-sm">Install PetChain</p>
+        <p className="font-semibold text-gray-900 text-sm">Install CatChain</p>
         <p className="text-xs text-gray-500 truncate">Add to home screen for offline access</p>
       </div>
       <div className="flex gap-2 flex-shrink-0">
@@ -56,7 +56,7 @@ export function PWAUpdateBanner({ onUpdate, onDismiss }: PWAUpdateBannerProps) {
       <span className="text-xl flex-shrink-0">🔄</span>
       <div className="flex-1 min-w-0">
         <p className="font-semibold text-sm">Update available</p>
-        <p className="text-xs text-blue-100">A new version of PetChain is ready.</p>
+        <p className="text-xs text-blue-100">A new version of CatChain is ready.</p>
       </div>
       <div className="flex gap-2 flex-shrink-0">
         <button

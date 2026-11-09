@@ -117,13 +117,13 @@ export default function Sidebar({ collapsed, onToggle }: SidebarProps) {
         {!collapsed && (
           <Link href="/" className="flex items-center gap-2 min-w-0">
             <Image
-              src="/PETCHAIN.jpeg"
-              alt="PetChain"
+              src="/CATCHAIN.jpeg"
+              alt="CatChain"
               width={32}
               height={32}
               className="rounded-lg shrink-0"
             />
-            <span className="font-bold text-blue-700 truncate">PetChain</span>
+            <span className="font-bold text-blue-700 truncate">CatChain</span>
           </Link>
         )}
         <button

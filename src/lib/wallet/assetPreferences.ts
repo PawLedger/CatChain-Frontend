@@ -7,7 +7,7 @@ import type { WalletBalance, WalletNetwork } from '../../types/wallet';
  * what the backend authorises. Nothing here is sent off the device.
  */
 
-const STORAGE_PREFIX = 'petchain-wallet-asset-prefs';
+const STORAGE_PREFIX = 'catchain-wallet-asset-prefs';
 const MAX_ENTRIES = 200;
 const MAX_KEY_LENGTH = 80;
 

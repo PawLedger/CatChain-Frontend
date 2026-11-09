@@ -17,7 +17,7 @@ test.describe('External link policy', () => {
       // Seed a wallet so the dashboard renders.
       await page.addInitScript(() =>
         localStorage.setItem(
-          'petchain_wallets',
+          'catchain_wallets',
           JSON.stringify([
             {
               id: 'wallet-test',

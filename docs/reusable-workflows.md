@@ -55,7 +55,7 @@ jobs:
 | `skip-frontend` | boolean | No | `false` | Skip frontend build |
 | `skip-backend` | boolean | No | `false` | Skip backend build |
 | `docker-registry` | string | No | `ghcr.io` | Docker registry |
-| `docker-image-name` | string | No | `petchain-frontend` | Docker image name |
+| `docker-image-name` | string | No | `catchain-frontend` | Docker image name |
 | `docker-tag` | string | No | `latest` | Docker image tag |
 | `push-docker` | boolean | No | `false` | Push Docker image |
 

@@ -2,7 +2,7 @@
 
 ## 1. Architecture Overview
 
-PetChain uses two GitHub Actions bots for automated PR management:
+CatChain uses two GitHub Actions bots for automated PR management:
 
 ### PR Review Bot (`.github/workflows/pr-review-bot.yml`)
 - **Trigger:** `pull_request` events (`opened`, `synchronize`, `reopened`) targeting `main` or `develop`
@@ -154,5 +154,5 @@ merge_method: 'merge'   // or 'rebase'
 If auto-merge fails or is blocked:
 
 ```bash
-gh pr merge <PR_NUMBER> --squash --repo DogStark/petChain-Frontend
+gh pr merge <PR_NUMBER> --squash --repo devnWisdom/catChain-Frontend
 ```

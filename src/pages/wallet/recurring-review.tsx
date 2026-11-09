@@ -37,7 +37,7 @@ export default function RecurringPaymentReviewPage() {
   return (
     <>
       <Head>
-        <title>Review Recurring Stellar Payments — PetChain</title>
+        <title>Review Recurring Stellar Payments — CatChain</title>
         <meta name="robots" content="noindex,nofollow,noarchive" />
       </Head>
 

@@ -6,8 +6,8 @@ describe('remoteImageHosts', () => {
   });
 
   it('allows known S3 bucket hosts', () => {
-    expect(isAllowedImageHost('petchain-uploads.s3.amazonaws.com')).toBe(true);
-    expect(isAllowedImageHost('petchain-uploads.s3.us-east-1.amazonaws.com')).toBe(true);
+    expect(isAllowedImageHost('catchain-uploads.s3.amazonaws.com')).toBe(true);
+    expect(isAllowedImageHost('catchain-uploads.s3.us-east-1.amazonaws.com')).toBe(true);
   });
 
   it('allows Google Cloud Storage', () => {
@@ -17,7 +17,7 @@ describe('remoteImageHosts', () => {
   it('allows known IPFS gateways', () => {
     expect(isAllowedImageHost('ipfs.io')).toBe(true);
     expect(isAllowedImageHost('gateway.pinata.cloud')).toBe(true);
-    expect(isAllowedImageHost('petchain.infura-ipfs.io')).toBe(true);
+    expect(isAllowedImageHost('catchain.infura-ipfs.io')).toBe(true);
   });
 
   it('rejects an unlisted/unexpected host', () => {

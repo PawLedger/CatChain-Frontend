@@ -140,12 +140,12 @@ test('generates an otpauth URI', () => {
 });
 
 test('URI contains the issuer', () => {
-  const url = generateQRCodeURL('SECRET', 'user@example.com', 'PetChain');
-  assert.ok(url.includes('PetChain'), 'URI should contain issuer');
+  const url = generateQRCodeURL('SECRET', 'user@example.com', 'CatChain');
+  assert.ok(url.includes('CatChain'), 'URI should contain issuer');
 });
 
 test('URI contains the encoded email', () => {
-  const url = generateQRCodeURL('SECRET', 'user@example.com', 'PetChain');
+  const url = generateQRCodeURL('SECRET', 'user@example.com', 'CatChain');
   assert.ok(url.includes(encodeURIComponent('user@example.com')));
 });
 
@@ -169,15 +169,15 @@ test('URI specifies 30 second period', () => {
   assert.ok(url.includes('period=30'));
 });
 
-test('default issuer is PetChain', () => {
+test('default issuer is CatChain', () => {
   const url = generateQRCodeURL('SECRET', 'user@example.com');
-  assert.ok(url.includes('PetChain'));
+  assert.ok(url.includes('CatChain'));
 });
 
 test('custom issuer overrides default', () => {
   const url = generateQRCodeURL('SECRET', 'user@example.com', 'VetApp');
   assert.ok(url.includes('VetApp'));
-  assert.ok(!url.includes('PetChain'));
+  assert.ok(!url.includes('CatChain'));
 });
 
 // ── backup code uniqueness (generation simulation) ────────────────

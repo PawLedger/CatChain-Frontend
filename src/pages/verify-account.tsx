@@ -130,7 +130,7 @@ export default function VerifyAccountPage() {
         <div className="text-center">
           <h1 className="text-3xl font-extrabold text-gray-900">Verify your account</h1>
           <p className="mt-2 text-sm text-gray-600">
-            Finish email and phone verification to unlock your new PetChain account.
+            Finish email and phone verification to unlock your new CatChain account.
           </p>
           <div className="mt-4 text-left">
             <label htmlFor="accountEmail" className="block text-sm font-medium text-gray-700">

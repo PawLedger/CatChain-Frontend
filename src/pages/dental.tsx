@@ -364,8 +364,8 @@ export default function DentalHealthPage() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-cyan-50 via-blue-50 to-purple-50 pb-16">
             <Head>
-                <title>Dental Health | PetChain</title>
-                <meta name="description" content="Track your pet's dental health, cleanings, tooth chart, and dental care reminders on PetChain." />
+                <title>Dental Health | CatChain</title>
+                <meta name="description" content="Track your pet's dental health, cleanings, tooth chart, and dental care reminders on CatChain." />
             </Head>
 
             {/* ── Header ── */}

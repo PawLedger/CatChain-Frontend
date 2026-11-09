@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document describes the comprehensive integration tests for the payment scheduling functionality in petChain-Frontend. The tests are located in `tests/integration/scheduling.test.ts` and use Jest with fake timers for deterministic, time-independent testing.
+This document describes the comprehensive integration tests for the payment scheduling functionality in catChain-Frontend. The tests are located in `tests/integration/scheduling.test.ts` and use Jest with fake timers for deterministic, time-independent testing.
 
 ## What Was Created
 

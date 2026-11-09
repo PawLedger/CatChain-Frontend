@@ -16,12 +16,8 @@ interface SurgeryFormProps {
   onCancel: () => void;
 }
 
-import {
-  validateNotFuture,
-  validateAfterBirth,
-  validateDateOrdering,
-} from '../../lib/validation/dateValidation';
-import { useAnnouncement } from '@/hooks/useAnnouncement';
+export default function SurgeryForm({ surgery, petId, petDateOfBirth, onSubmit, onCancel }: SurgeryFormProps) {
+  const { announce } = useAnnouncement();
   const [formData, setFormData] = useState<CreateSurgeryDto>({
     petId: surgery?.petId || petId,
     surgeryType: surgery?.surgeryType || '',
@@ -213,4 +209,4 @@ import { useAnnouncement } from '@/hooks/useAnnouncement';
       </div>
     </form>
   );
-};
+}

@@ -1,15 +1,15 @@
-# PetChain Frontend
+# CatChain Frontend
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/DogStark/petChain-Frontend)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/devnWisdom/catChain-Frontend)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-16.x-black)](https://nextjs.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
 ## Overview
 
-PetChain is a decentralized platform on Stellar that securely manages pet medical records. Today, health data is often scattered, lost, or stuck in outdated systems, making it hard to track vaccinations, manage treatments, or respond quickly in emergencies.
+CatChain is a decentralized platform on Stellar that securely manages pet medical records. Today, health data is often scattered, lost, or stuck in outdated systems, making it hard to track vaccinations, manage treatments, or respond quickly in emergencies.
 
-By making records tamper-proof and universally accessible, PetChain keeps vets and pet owners aligned no matter where the pet is or who is treating them. Pets get a scannable tag for quick access to key medical details, which can also act as a tracker if the pet goes missing.
+By making records tamper-proof and universally accessible, CatChain keeps vets and pet owners aligned no matter where the pet is or who is treating them. Pets get a scannable tag for quick access to key medical details, which can also act as a tracker if the pet goes missing.
 
 This repository hosts the **frontend** (Next.js) application. A separate `backend/` folder contains the NestJS API; the two are independently configured Node applications that are deliberately kept isolated (see [Workspace layout](#workspace-layout)).
 
@@ -27,7 +27,7 @@ This repository hosts the **frontend** (Next.js) application. A separate `backen
 
 ## Browser Support & Feature Detection
 
-PetChain degrades gracefully instead of failing when a browser lacks a capability. Runtime feature detection (`src/lib/browserSupport.ts`) gates every optional action behind a client-side check, so unsupported APIs are never invoked during SSR and users get clear guidance rather than a broken control.
+CatChain degrades gracefully instead of failing when a browser lacks a capability. Runtime feature detection (`src/lib/browserSupport.ts`) gates every optional action behind a client-side check, so unsupported APIs are never invoked during SSR and users get clear guidance rather than a broken control.
 
 ### Supported browser versions
 
@@ -111,8 +111,8 @@ See [Architecture](#architecture--data-flow) in [PROJECT_STATUS.md](./PROJECT_ST
 
 ```bash
 # Clone the repository
-git clone https://github.com/DogStark/petChain-Frontend.git
-cd petChain-Frontend
+git clone https://github.com/devnWisdom/catChain-Frontend.git
+cd catChain-Frontend
 
 # Use the correct Node.js version
 nvm use
@@ -185,9 +185,9 @@ Please read [SETUP.md](./SETUP.md), [CODE_STYLE.md](./CODE_STYLE.md), and [PROJE
 
 ## Related Repositories
 
-- Backend - [DogStark/petchain_api](https://github.com/DogStark/petchain_api)
-- Smart Contracts - [DogStark/PetMedTracka-Contracts](https://github.com/DogStark/PetMedTracka-Contracts)
-- Mobile App - [DogStark/PetMedTracka-MobileApp](https://github.com/DogStark/PetMedTracka-MobileApp)
+- Backend - [devnWisdom/catchain_api](https://github.com/devnWisdom/catchain_api)
+- Smart Contracts - [devnWisdom/PetMedTracka-Contracts](https://github.com/devnWisdom/PetMedTracka-Contracts)
+- Mobile App - [devnWisdom/PetMedTracka-MobileApp](https://github.com/devnWisdom/PetMedTracka-MobileApp)
 
 ## Contact & Support
 
@@ -196,7 +196,7 @@ Please read [SETUP.md](./SETUP.md), [CODE_STYLE.md](./CODE_STYLE.md), and [PROJE
 
 ## License
 
-PetChain is licensed under the MIT License.
+CatChain is licensed under the MIT License.
 
 ## Handsoff notes
 

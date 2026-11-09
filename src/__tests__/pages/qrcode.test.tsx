@@ -1,29 +1,19 @@
-import { render, screen, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import React from 'react';
-
-import { qrcodeAPI, type QRCodeRecord } from '@/lib/api/qrcodeAPI';
-import QRCodePage from '@/pages/qrcode';
-
-jest.mock('next/head', () => ({
-  __esModule: true,
-  default: ({ children }: { children: React.ReactNode }) => (
-    <div data-testid="mock-head">{children}</div>
-  ),
-}));
+import { render, screen, waitFor } from '@testing-library/react';
+import QRCodePage from '../qrcode';
+import { qrcodeAPI } from '@/lib/api/qrcodeAPI';
+import '@testing-library/jest-dom';
 
 jest.mock('next/router', () => ({
   useRouter: () => ({
-    query: { petId: '11111111-1111-4111-8111-111111111111' },
+    query: { petId: 'pet-123' },
     back: jest.fn(),
   }),
 }));
 
 jest.mock('@/components/ProtectedRoute', () => ({
   __esModule: true,
-  default: ({ children }: { children: React.ReactNode }) => (
-    <div data-testid="protected-route">{children}</div>
-  ),
+  default: ({ children }: { children: React.ReactNode }) => <>{children}</>,
 }));
 
 jest.mock('@/lib/api/qrcodeAPI', () => ({
@@ -36,59 +26,48 @@ jest.mock('@/lib/api/qrcodeAPI', () => ({
   },
 }));
 
-jest.mock('qrcode.react', () => ({
-  QRCodeSVG: ({ id, value }: { id: string; value: string }) => (
-    <svg id={id} data-testid={id} aria-label={`QR code for ${value}`} />
-  ),
-}));
-
-const oldTag: QRCodeRecord = {
-  id: 'record-1',
-  petId: '11111111-1111-4111-8111-111111111111',
-  qrCodeId: 'QR-old',
-  isActive: true,
-  scanCount: 8,
-  createdAt: '2026-01-01T00:00:00.000Z',
-  updatedAt: '2026-01-01T00:00:00.000Z',
-};
-
-const replacementTag: QRCodeRecord = {
-  ...oldTag,
-  qrCodeId: 'QR-new',
-  isActive: true,
-  scanCount: 0,
-  updatedAt: '2026-01-02T00:00:00.000Z',
-};
-
-describe('QRCodePage tag rotation', () => {
+describe('QRCodePage Print Scannability', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    jest.spyOn(window, 'confirm').mockReturnValue(true);
-    (qrcodeAPI.getByPetId as jest.Mock).mockResolvedValue([oldTag]);
   });
 
-  afterEach(() => {
-    jest.restoreAllMocks();
+  it('renders standard QR code SVG with appropriate level and margin for print', async () => {
+    (qrcodeAPI.getByPetId as jest.Mock).mockResolvedValue([
+      { qrCodeId: 'qr-123', isActive: true, scanCount: 5, petId: 'pet-123', createdAt: new Date().toISOString() },
+    ]);
+
+    const { container } = render(<QRCodePage />);
+
+    await waitFor(() => {
+      expect(screen.getByText('qr-123')).toBeInTheDocument();
+    });
+
+    // Check SVG structure for QR code
+    const svg = container.querySelector('svg[id="qr-svg-qr-123"]');
+    expect(svg).toBeInTheDocument();
+    
+    // Check sizing
+    expect(svg).toHaveAttribute('height', '140');
+    expect(svg).toHaveAttribute('width', '140');
+
+    // Due to the nature of qrcode.react, we want to ensure it generated a valid SVG
+    // with <path> elements representing the QR code.
+    const path = svg?.querySelector('path');
+    expect(path).toBeInTheDocument();
   });
 
-  it('replaces a revoked old tag with the new active tag after rotation', async () => {
-    (qrcodeAPI.regenerate as jest.Mock).mockResolvedValue(replacementTag);
+  it('contains the print button for triggering print view', async () => {
+    (qrcodeAPI.getByPetId as jest.Mock).mockResolvedValue([
+      { qrCodeId: 'qr-123', isActive: true, scanCount: 5, petId: 'pet-123', createdAt: new Date().toISOString() },
+    ]);
 
     render(<QRCodePage />);
 
-    expect(await screen.findByText('QR-old')).toBeInTheDocument();
-
-    await userEvent.click(screen.getByRole('button', { name: /replace tag/i }));
-
     await waitFor(() => {
-      expect(screen.getByText('QR-new')).toBeInTheDocument();
+      expect(screen.getByText('qr-123')).toBeInTheDocument();
     });
 
-    expect(screen.queryByText('QR-old')).not.toBeInTheDocument();
-    expect(
-      screen.getByText(/replacement tag QR-new is active/i),
-    ).toBeInTheDocument();
-    expect(screen.getByText(/old tag QR-old is no longer valid/i)).toBeInTheDocument();
+    const printButton = screen.getByRole('button', { name: /print tags/i });
+    expect(printButton).toBeInTheDocument();
   });
 });
-

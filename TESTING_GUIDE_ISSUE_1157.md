@@ -182,7 +182,7 @@
 
 **localStorage Verification:**
 1. Open DevTools → Application → Local Storage
-2. Find key: `petchain-data-mode`
+2. Find key: `catchain-data-mode`
 3. Toggle mode
 4. **Expected**: Value changes between "full" and "reduced"
 

@@ -26,7 +26,7 @@ interface DataModeProviderProps {
   children: React.ReactNode;
 }
 
-const STORAGE_KEY = 'petchain-data-mode';
+const STORAGE_KEY = 'catchain-data-mode';
 
 /**
  * Provides reduced-data mode for low-bandwidth users.

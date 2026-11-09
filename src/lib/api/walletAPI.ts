@@ -1,7 +1,7 @@
 /**
  * WalletManagementAPI (walletAPI)
  *
- * Responsibility: HTTP transport layer between the frontend and the PetChain
+ * Responsibility: HTTP transport layer between the frontend and the CatChain
  * backend /wallets endpoints. Handles only server-side wallet registration
  * metadata — it never transmits or stores secret keys.
  *
@@ -16,7 +16,7 @@
  *
  *   ❌ NOT responsible for reading the local wallet list — that lives in
  *      walletService (src/lib/wallet/walletService.ts), which reads from
- *      localStorage under 'petchain_wallets'.
+ *      localStorage under 'catchain_wallets'.
  *   ❌ NOT responsible for key generation, encryption, or signing — walletService
  *      and walletCrypto own those concerns.
  *   ❌ NOT responsible for live Horizon balance polling — that belongs to

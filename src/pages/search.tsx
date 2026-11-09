@@ -315,7 +315,7 @@ export default function SearchPage() {
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Search PetChain</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">Search CatChain</h1>
           <p className="text-gray-600">Find pets, vets, medical records, and emergency services</p>
         </div>
 

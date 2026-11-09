@@ -235,7 +235,7 @@ export default function AdminReports() {
         <ProtectedRoute requireAdmin>
             <div className="min-h-screen bg-slate-50 print:bg-white text-slate-800 font-sans">
                 <Head>
-                    <title>Admin Reports | PetChain</title>
+                    <title>Admin Reports | CatChain</title>
                 </Head>
 
                 {/* Hide Header when printing */}
@@ -285,7 +285,7 @@ export default function AdminReports() {
                     >
                         {/* Print Header (Only visible when printing) */}
                         <div className="hidden print:block mb-8 border-b pb-4">
-                            <h1 className="text-3xl font-bold text-slate-900">PetChain Admin Report</h1>
+                            <h1 className="text-3xl font-bold text-slate-900">CatChain Admin Report</h1>
                             <p className="text-slate-500 mt-1">
                                 Category: {tabs.find(t => t.id === activeTab)?.label} | Generated on: {new Date().toLocaleDateString()}
                             </p>

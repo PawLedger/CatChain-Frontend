@@ -279,7 +279,7 @@ export class AttachmentQueueManager {
 
 // ─── IndexedDB storage ───────────────────────────────────────────────────────
 
-const DB_NAME = 'petchain-attachments';
+const DB_NAME = 'catchain-attachments';
 const DB_VERSION = 1;
 const STORE_NAME = 'attachments';
 

@@ -108,7 +108,7 @@ function ConflictComparison() {
   return (
     <>
       <Head>
-        <title>Compare sync conflict - PetChain</title>
+        <title>Compare sync conflict - CatChain</title>
         <meta name="robots" content="noindex,nofollow,noarchive" />
         <meta name="referrer" content="no-referrer" />
       </Head>
@@ -227,7 +227,7 @@ function ConflictComparison() {
           href="/"
           className="inline-block rounded underline underline-offset-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
         >
-          Return to PetChain
+          Return to CatChain
         </Link>
       </main>
     </>

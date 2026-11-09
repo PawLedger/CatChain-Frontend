@@ -5,7 +5,7 @@ FROM nginx:alpine
 RUN echo '<!DOCTYPE html>\
 <html>\
 <head>\
-    <title>PetChain Frontend - Development Mode</title>\
+    <title>CatChain Frontend - Development Mode</title>\
     <style>\
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; \
                display: flex; justify-content: center; align-items: center; height: 100vh; \
@@ -21,7 +21,7 @@ RUN echo '<!DOCTYPE html>\
 <body>\
     <div class="container">\
         <div class="status-badge">Container Active</div>\
-        <h1>PetChain Frontend</h1>\
+        <h1>CatChain Frontend</h1>\
         <p>The frontend infrastructure is successfully orchestrated.</p>\
         <p><strong>Note:</strong> This is a skeleton view because the Next.js build is currently failing due to dependency and syntax errors.</p>\
     </div>\

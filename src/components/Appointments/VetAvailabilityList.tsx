@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Clock, Check, X, ShieldAlert, Save, Loader2 } from 'lucide-react';
 import { clinicsAPI } from '@/lib/api/clinicsAPI';
 
-const STORAGE_KEY = 'petchain-vet-availability';
+const STORAGE_KEY = 'catchain-vet-availability';
 
 const DEFAULT_AVAILABILITY = [
   { day: 'Monday', slots: '09:00 - 17:00', active: true },

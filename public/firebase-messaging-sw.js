@@ -49,13 +49,13 @@ if (!configIsValid(firebaseConfig)) {
   const messaging = firebase.messaging();
 
   messaging.onBackgroundMessage((payload) => {
-    const title = payload.notification?.title ?? 'PetChain';
+    const title = payload.notification?.title ?? 'CatChain';
     const options = {
       body: payload.notification?.body ?? '',
       icon: payload.notification?.icon ?? '/favicon.ico',
       badge: '/favicon.ico',
       data: payload.data ?? {},
-      tag: payload.data?.tag ?? 'petchain-notification',
+      tag: payload.data?.tag ?? 'catchain-notification',
     };
     self.registration.showNotification(title, options);
   });

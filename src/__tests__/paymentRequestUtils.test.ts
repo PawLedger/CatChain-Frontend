@@ -165,8 +165,8 @@ describe('Payment Request Utilities', () => {
         status: 'active',
       };
 
-      const url = buildPaymentRequestUrl(req, 'https://petchain.app');
-      expect(url.startsWith('https://petchain.app/pay/request?req=')).toBe(true);
+      const url = buildPaymentRequestUrl(req, 'https://catchain.app');
+      expect(url.startsWith('https://catchain.app/pay/request?req=')).toBe(true);
       expect(url).not.toContain(secretKey);
     });
   });

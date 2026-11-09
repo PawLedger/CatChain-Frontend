@@ -21,7 +21,7 @@ import {
 } from './walletReceipts';
 import type { Transaction } from '@/lib/api/transactionAPI';
 
-const RECEIPT_STORAGE_KEY = 'petchain_wallet_receipts';
+const RECEIPT_STORAGE_KEY = 'catchain_wallet_receipts';
 
 /**
  * Recursively strip any potential sensitive fields (PIN, secret, private key, seed, password)

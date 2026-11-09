@@ -1,27 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: petchain-frontend
+  name: catchain-frontend
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: petchain-frontend
+      app: catchain-frontend
   template:
     metadata:
       labels:
-        app: petchain-frontend
+        app: catchain-frontend
     spec:
       containers:
       - name: frontend
-        image: petchain-frontend:latest
+        image: catchain-frontend:latest
         # FIX: Prevents K8s from trying to pull from Docker Hub
         imagePullPolicy: IfNotPresent 
         ports:
         - containerPort: 3000
         envFrom:
         - configMapRef:
-            name: petchain-config
+            name: catchain-config
         resources:
           limits:
             cpu: "500m"
@@ -48,7 +48,7 @@ metadata:
   name: frontend-service
 spec:
   selector:
-    app: petchain-frontend
+    app: catchain-frontend
   ports:
     - protocol: TCP
       port: 80

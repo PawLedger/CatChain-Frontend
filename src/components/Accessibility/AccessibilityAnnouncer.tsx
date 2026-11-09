@@ -50,9 +50,9 @@ export default function AccessibilityAnnouncer() {
       timeoutsRef.current.push(timeout);
     };
 
-    window.addEventListener('petchain-announcement', handler);
+    window.addEventListener('catchain-announcement', handler);
     return () => {
-      window.removeEventListener('petchain-announcement', handler);
+      window.removeEventListener('catchain-announcement', handler);
       timeoutsRef.current.forEach(clearTimeout);
       timeoutsRef.current = [];
     };

@@ -146,8 +146,8 @@ export const useNotifications = () => {
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-const PREFS_KEY = 'petchain-notif-prefs';
-const PERSIST_KEY = 'petchain-notifications';
+const PREFS_KEY = 'catchain-notif-prefs';
+const PERSIST_KEY = 'catchain-notifications';
 const MAX_PERSISTED = 100;
 
 function loadPrefs(): NotificationPreferences {

@@ -42,7 +42,7 @@ export default function AppointmentsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-green-50 flex flex-col font-sans text-gray-900">
       <Head>
-        <title>Appointments | PetChain</title>
+        <title>Appointments | CatChain</title>
         <meta
           name="description"
           content="Manage your pet's veterinary appointments."
@@ -145,7 +145,7 @@ export default function AppointmentsPage() {
 
       <footer className="text-center text-gray-500 py-6 mt-auto">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-          <span>© 2024 PetChain. MIT License.</span>
+          <span>© 2024 CatChain. MIT License.</span>
         </div>
       </footer>
     </div>

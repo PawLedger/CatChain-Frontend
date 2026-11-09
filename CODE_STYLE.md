@@ -1,6 +1,6 @@
 # Code Style Guide
 
-This document outlines the coding standards and best practices for the PetChain project.
+This document outlines the coding standards and best practices for the CatChain project.
 
 ## Table of Contents
 

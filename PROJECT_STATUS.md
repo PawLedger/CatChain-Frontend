@@ -21,7 +21,7 @@ The "Next Steps" list further below documents remaining improvements; items alre
 
 ## Summary
 
-The PetChain Frontend repository has been cleaned, standardized, and verified to build successfully. All code quality checks pass, and the codebase follows consistent patterns.
+The CatChain Frontend repository has been cleaned, standardized, and verified to build successfully. All code quality checks pass, and the codebase follows consistent patterns.
 
 ## Completed Tasks
 
@@ -220,7 +220,7 @@ npm run clean && npm run build
 ## File Structure
 
 ```
-petChain-Frontend/
+catChain-Frontend/
 ├── src/
 │   ├── components/     # React components
 │   ├── pages/          # Next.js pages
@@ -243,8 +243,8 @@ petChain-Frontend/
 
 ## Contact
 
-- **Telegram**: [@PetChain Group](https://t.me/+Jw8HkvUhinw2YjE0)
-- **Issues**: [GitHub Issues](https://github.com/DogStark/petChain-Frontend/issues)
+- **Telegram**: [@CatChain Group](https://t.me/+Jw8HkvUhinw2YjE0)
+- **Issues**: [GitHub Issues](https://github.com/devnWisdom/catChain-Frontend/issues)
 - **Lead**: [@llins_x](https://t.me/llins_x)
 
 ---

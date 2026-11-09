@@ -73,7 +73,7 @@ import walletService, { WalletService } from './walletService';
 import * as StellarSdk from '@stellar/stellar-sdk';
 import { encryptSecretKey, decryptSecretKey, computeChecksum } from './walletCrypto';
 
-const STORAGE_KEY = 'petchain_wallets';
+const STORAGE_KEY = 'catchain_wallets';
 
 const mockWallet = {
   id: 'wallet_test-uuid-1234',

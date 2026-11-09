@@ -97,7 +97,7 @@ import { walletAPI } from '../../api/walletAPI';
 import { computeChecksum } from '../walletCrypto';
 import walletService from '../walletService';
 
-const STORAGE_KEY = 'petchain_wallets';
+const STORAGE_KEY = 'catchain_wallets';
 
 const GOOD_BACKUP = {
   version: 1 as const,

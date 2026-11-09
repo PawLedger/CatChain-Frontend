@@ -383,7 +383,7 @@ export default function RatePage() {
   return (
     <>
       <Head>
-        <title>Exchange Rates | PetChain</title>
+        <title>Exchange Rates | CatChain</title>
         <meta name="description" content="View live XLM and token exchange rates, historical charts, and currency conversion." />
       </Head>
 

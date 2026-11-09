@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "PetChain",
+    "title": "CatChain",
     "tagline": "Dezentralisierte Versorgungsunternehmenzahlungen auf der Stellar-Blockchain",
     "description": "Bezahlen Sie Ihre Versorgerrechnungen mit Kryptowährung auf dem Stellar-Netzwerk",
     "footer": {
@@ -107,8 +107,8 @@
     }
   },
   "about": {
-    "title": "Über PetChain",
-    "description": "PetChain ist eine dezentralisierte Versorgerzahlungsplattform, die auf der Stellar-Blockchain aufgebaut ist. Wir ermöglichen sichere, transparente und effiziente Versorgerrechnungszahlungen mit Kryptowährung.",
+    "title": "Über CatChain",
+    "description": "CatChain ist eine dezentralisierte Versorgerzahlungsplattform, die auf der Stellar-Blockchain aufgebaut ist. Wir ermöglichen sichere, transparente und effiziente Versorgerrechnungszahlungen mit Kryptowährung.",
     "features": {
       "title": "Hauptfunktionen",
       "secure": "Sichere Transaktionen",
@@ -151,7 +151,7 @@
   },
   "rate": {
     "title": "Bewerten Sie Ihre Erfahrung",
-    "description": "Helfen Sie uns uns zu verbessern, indem Sie Ihre Erfahrung mit PetChain bewerten.",
+    "description": "Helfen Sie uns uns zu verbessern, indem Sie Ihre Erfahrung mit CatChain bewerten.",
     "rating": {
       "excellent": "Ausgezeichnet",
       "good": "Gut",
@@ -161,7 +161,7 @@
     },
     "review": {
       "title": "Bewertung Schreiben",
-      "placeholder": "Teilen Sie Ihre Erfahrung mit PetChain...",
+      "placeholder": "Teilen Sie Ihre Erfahrung mit CatChain...",
       "submit": "Bewertung Einreichen",
       "thankYou": "Vielen Dank für Ihr Feedback!"
     }

@@ -12,8 +12,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/DogStark/petChain-Frontend.git
-   cd petChain-Frontend
+   git clone https://github.com/devnWisdom/catChain-Frontend.git
+   cd catChain-Frontend
    ```
 
 2. **Install dependencies**
@@ -110,7 +110,7 @@ npm run validate
 ## Project Structure
 
 ```
-petChain-Frontend/
+catChain-Frontend/
 ├── src/
 │   ├── components/     # React components
 │   ├── pages/          # Next.js pages
@@ -126,7 +126,7 @@ petChain-Frontend/
 ### Frontend (.env.local)
 
 ```env
-NEXT_PUBLIC_APP_NAME=PetChain
+NEXT_PUBLIC_APP_NAME=CatChain
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 NEXT_PUBLIC_API_URL=http://localhost:3001
 NEXT_PUBLIC_STELLAR_NETWORK=testnet
@@ -201,6 +201,6 @@ See [contributing.md](./contributing.md) for detailed guidelines.
 
 ## Support
 
-- **Telegram**: [@PetChain Group](https://t.me/+Jw8HkvUhinw2YjE0)
-- **Issues**: [GitHub Issues](https://github.com/DogStark/petChain-Frontend/issues)
+- **Telegram**: [@CatChain Group](https://t.me/+Jw8HkvUhinw2YjE0)
+- **Issues**: [GitHub Issues](https://github.com/devnWisdom/catChain-Frontend/issues)
 - **Contact**: [@llins_x](https://t.me/llins_x)

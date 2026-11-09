@@ -20,7 +20,7 @@ describe('DataModeContext', () => {
     });
 
     it('should load mode from localStorage if available', () => {
-      localStorage.setItem('petchain-data-mode', 'reduced');
+      localStorage.setItem('catchain-data-mode', 'reduced');
 
       const { result } = renderHook(() => useDataMode(), { wrapper });
 
@@ -29,7 +29,7 @@ describe('DataModeContext', () => {
     });
 
     it('should ignore invalid localStorage values', () => {
-      localStorage.setItem('petchain-data-mode', 'invalid-mode');
+      localStorage.setItem('catchain-data-mode', 'invalid-mode');
 
       const { result } = renderHook(() => useDataMode(), { wrapper });
 
@@ -57,7 +57,7 @@ describe('DataModeContext', () => {
         result.current.setMode('reduced');
       });
 
-      expect(localStorage.getItem('petchain-data-mode')).toBe('reduced');
+      expect(localStorage.getItem('catchain-data-mode')).toBe('reduced');
     });
 
     it('should handle localStorage errors gracefully', () => {
@@ -90,7 +90,7 @@ describe('DataModeContext', () => {
     });
 
     it('should toggle from reduced to full', () => {
-      localStorage.setItem('petchain-data-mode', 'reduced');
+      localStorage.setItem('catchain-data-mode', 'reduced');
       const { result } = renderHook(() => useDataMode(), { wrapper });
 
       act(() => {
@@ -108,13 +108,13 @@ describe('DataModeContext', () => {
         result.current.toggleMode();
       });
 
-      expect(localStorage.getItem('petchain-data-mode')).toBe('reduced');
+      expect(localStorage.getItem('catchain-data-mode')).toBe('reduced');
 
       act(() => {
         result.current.toggleMode();
       });
 
-      expect(localStorage.getItem('petchain-data-mode')).toBe('full');
+      expect(localStorage.getItem('catchain-data-mode')).toBe('full');
     });
   });
 
@@ -153,7 +153,7 @@ describe('DataModeContext', () => {
       });
 
       // Verify it's in localStorage (client-side only)
-      expect(localStorage.getItem('petchain-data-mode')).toBe('reduced');
+      expect(localStorage.getItem('catchain-data-mode')).toBe('reduced');
 
       // Setting mode should not involve any network requests
       // The preference stays purely client-side

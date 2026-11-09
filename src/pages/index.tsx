@@ -38,7 +38,7 @@ const FEATURES = [
     desc: "Easily plugs into existing vet or hospital software.",
     icon: "💻",
     details:
-      "PetChain is designed to integrate seamlessly with veterinary and hospital management systems, making it easy for professionals to access and update records with minimal friction.",
+      "CatChain is designed to integrate seamlessly with veterinary and hospital management systems, making it easy for professionals to access and update records with minimal friction.",
   },
   {
     title: "Offline Mode & Privacy",
@@ -66,9 +66,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-green-50 flex flex-col">
       <Head>
-        <title>PetChain — Smart Pet Health Tracking on Blockchain</title>
-        <meta name="description" content="PetChain provides decentralized, private, and vet-ready health tracking for your pet. Store medical records on Stellar blockchain with scannable QR tags." />
-        <meta property="og:title" content="PetChain — Smart Pet Health Tracking" />
+        <title>CatChain — Smart Pet Health Tracking on Blockchain</title>
+        <meta name="description" content="CatChain provides decentralized, private, and vet-ready health tracking for your pet. Store medical records on Stellar blockchain with scannable QR tags." />
+        <meta property="og:title" content="CatChain — Smart Pet Health Tracking" />
         <meta property="og:description" content="Decentralized, private, and vet-ready health tracking for your pet." />
         <meta property="og:type" content="website" />
       </Head>
@@ -76,8 +76,8 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center py-16 px-4 text-center">
         <div className="mb-6">
           <Image
-            src="/PETCHAIN.jpeg"
-            alt="PetChain Logo"
+            src="/CATCHAIN.jpeg"
+            alt="CatChain Logo"
             width={120}
             height={120}
             priority
@@ -85,7 +85,7 @@ export default function Home() {
           />
         </div>
         <h1 className="text-5xl md:text-6xl font-extrabold text-blue-700 mb-4 drop-shadow-sm">
-          PetChain
+          CatChain
         </h1>
         <div className="text-xl md:text-2xl text-gray-700 max-w-2xl mb-6">
           <span>
@@ -173,7 +173,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="text-center text-gray-500 py-6 mt-auto">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-          <span>© 2024 PetChain. MIT License.</span>
+          <span>© 2024 CatChain. MIT License.</span>
         </div>
       </footer>
 

@@ -56,7 +56,7 @@ export default function TwoFactorRecovery({ onComplete, onCancel }: TwoFactorRec
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'petchain-2fa-backup-codes.txt';
+    a.download = 'catchain-2fa-backup-codes.txt';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

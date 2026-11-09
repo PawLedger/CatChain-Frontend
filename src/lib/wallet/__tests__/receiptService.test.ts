@@ -199,7 +199,7 @@ describe('ReceiptService', () => {
       expect(saved.intent).not.toHaveProperty('seed');
       expect(saved.intent).not.toHaveProperty('password');
 
-      const rawStorage = localStorage.getItem('petchain_wallet_receipts');
+      const rawStorage = localStorage.getItem('catchain_wallet_receipts');
       expect(rawStorage).not.toContain('123456');
       expect(rawStorage).not.toContain('SABC...');
       expect(rawStorage).not.toContain('word1');

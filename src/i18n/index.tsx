@@ -47,7 +47,7 @@ export const supportedLanguages: readonly LanguageConfig[] = [
   { code: 'ja', name: 'Japanese',   nativeName: '日本語',      dir: 'ltr', flag: '🇯🇵' },
 ] as const;
 
-const STORAGE_KEY = 'petchain-language';
+const STORAGE_KEY = 'catchain-language';
 const FALLBACK: LanguageCode = 'en';
 
 // ─── Translation resources ────────────────────────────────────────────────────

@@ -8,160 +8,160 @@ type RouteCopy = {
 
 const ROUTE_COPY: Record<string, RouteCopy> = {
   '/': {
-    title: 'PetChain | Pet Care Companion',
-    description: 'Organize pet care and connect with trusted veterinary clinics with PetChain.',
+    title: 'CatChain | Pet Care Companion',
+    description: 'Organize pet care and connect with trusted veterinary clinics with CatChain.',
     indexable: true,
   },
   '/about': {
-    title: 'About PetChain',
-    description: 'Learn about PetChain and our approach to connected pet care.',
+    title: 'About CatChain',
+    description: 'Learn about CatChain and our approach to connected pet care.',
     indexable: true,
   },
   '/clinics': {
-    title: 'Veterinary Clinics | PetChain',
-    description: 'Explore veterinary clinics and services with PetChain.',
+    title: 'Veterinary Clinics | CatChain',
+    description: 'Explore veterinary clinics and services with CatChain.',
     indexable: true,
   },
   '/clinics/[id]': {
-    title: 'Clinic Profile | PetChain',
-    description: 'View a veterinary clinic profile and its services on PetChain.',
+    title: 'Clinic Profile | CatChain',
+    description: 'View a veterinary clinic profile and its services on CatChain.',
     indexable: true,
   },
   '/pets/[id]': {
-    title: 'Pet Profile | PetChain',
-    description: 'Manage a pet profile in your PetChain account.',
+    title: 'Pet Profile | CatChain',
+    description: 'Manage a pet profile in your CatChain account.',
   },
   '/pets/[id]/emergency': {
-    title: 'Emergency Access Settings | PetChain',
-    description: 'Manage emergency access settings for a pet in PetChain.',
+    title: 'Emergency Access Settings | CatChain',
+    description: 'Manage emergency access settings for a pet in CatChain.',
   },
   '/scan/[id]': {
-    title: 'Emergency Pet Access | PetChain',
-    description: 'PetChain emergency tag access page.',
+    title: 'Emergency Pet Access | CatChain',
+    description: 'CatChain emergency tag access page.',
   },
   '/lab-results': {
-    title: 'Account Records | PetChain',
-    description: 'Manage saved records in your PetChain account.',
+    title: 'Account Records | CatChain',
+    description: 'Manage saved records in your CatChain account.',
   },
   '/qrcode': {
-    title: 'QR Code Tags | PetChain',
-    description: 'Manage QR tags in your PetChain account.',
+    title: 'QR Code Tags | CatChain',
+    description: 'Manage QR tags in your CatChain account.',
   },
   '/wallet': {
-    title: 'Wallet | PetChain',
-    description: 'Manage your PetChain wallet.',
+    title: 'Wallet | CatChain',
+    description: 'Manage your CatChain wallet.',
   },
   '/admin/reports': {
-    title: 'Admin Reports | PetChain',
-    description: 'Manage PetChain administration reports.',
+    title: 'Admin Reports | CatChain',
+    description: 'Manage CatChain administration reports.',
   },
   '/admin/sms': {
-    title: 'SMS Dashboard | PetChain',
-    description: 'Manage PetChain messaging administration.',
+    title: 'SMS Dashboard | CatChain',
+    description: 'Manage CatChain messaging administration.',
   },
   '/admin/security': {
-    title: 'Security Dashboard | PetChain',
-    description: 'Manage PetChain security settings.',
+    title: 'Security Dashboard | CatChain',
+    description: 'Manage CatChain security settings.',
   },
   '/review': {
-    title: 'Rate PetChain | PetChain',
-    description: 'Share feedback about your experience with PetChain.',
+    title: 'Rate CatChain | CatChain',
+    description: 'Share feedback about your experience with CatChain.',
   },
   '/sessions': {
-    title: 'Active Sessions | PetChain',
-    description: 'Review active sessions for your PetChain account.',
+    title: 'Active Sessions | CatChain',
+    description: 'Review active sessions for your CatChain account.',
   },
   '/offline': {
-    title: 'Offline | PetChain',
-    description: 'PetChain is currently unavailable offline.',
+    title: 'Offline | CatChain',
+    description: 'CatChain is currently unavailable offline.',
   },
   '/activity-log': {
-    title: 'Activity Log | PetChain',
-    description: 'Review activity for your PetChain account.',
+    title: 'Activity Log | CatChain',
+    description: 'Review activity for your CatChain account.',
   },
   '/dental': {
-    title: 'Dental Care | PetChain',
-    description: 'Manage dental care entries in your PetChain account.',
+    title: 'Dental Care | CatChain',
+    description: 'Manage dental care entries in your CatChain account.',
   },
   '/notifications': {
-    title: 'Notifications | PetChain',
-    description: 'Manage notifications for your PetChain account.',
+    title: 'Notifications | CatChain',
+    description: 'Manage notifications for your CatChain account.',
   },
   '/rate': {
-    title: 'Exchange Rates | PetChain',
-    description: 'View exchange rates in PetChain.',
+    title: 'Exchange Rates | CatChain',
+    description: 'View exchange rates in CatChain.',
   },
   '/appointments': {
-    title: 'Appointments | PetChain',
-    description: 'Manage appointments in your PetChain account.',
+    title: 'Appointments | CatChain',
+    description: 'Manage appointments in your CatChain account.',
   },
   '/analytics': {
-    title: 'Analytics | PetChain',
-    description: 'Review account analytics in PetChain.',
+    title: 'Analytics | CatChain',
+    description: 'Review account analytics in CatChain.',
   },
   '/account-settings': {
-    title: 'Account Settings | PetChain',
-    description: 'Manage your PetChain account settings.',
+    title: 'Account Settings | CatChain',
+    description: 'Manage your CatChain account settings.',
   },
   '/dashboard': {
-    title: 'Dashboard | PetChain',
-    description: 'View your PetChain account dashboard.',
+    title: 'Dashboard | CatChain',
+    description: 'View your CatChain account dashboard.',
   },
   '/forgot-password': {
-    title: 'Reset Password | PetChain',
-    description: 'Reset the password for your PetChain account.',
+    title: 'Reset Password | CatChain',
+    description: 'Reset the password for your CatChain account.',
   },
   '/login': {
-    title: 'Sign In | PetChain',
-    description: 'Sign in to your PetChain account.',
+    title: 'Sign In | CatChain',
+    description: 'Sign in to your CatChain account.',
   },
   '/onboarding': {
-    title: 'Get Started | PetChain',
-    description: 'Set up your PetChain account.',
+    title: 'Get Started | CatChain',
+    description: 'Set up your CatChain account.',
   },
   '/preferences': {
-    title: 'Preferences | PetChain',
-    description: 'Manage your PetChain preferences.',
+    title: 'Preferences | CatChain',
+    description: 'Manage your CatChain preferences.',
   },
   '/profile': {
-    title: 'Profile | PetChain',
-    description: 'Manage your PetChain profile.',
+    title: 'Profile | CatChain',
+    description: 'Manage your CatChain profile.',
   },
   '/register': {
-    title: 'Create Account | PetChain',
-    description: 'Create a PetChain account.',
+    title: 'Create Account | CatChain',
+    description: 'Create a CatChain account.',
   },
   '/search': {
-    title: 'Search | PetChain',
-    description: 'Search PetChain.',
+    title: 'Search | CatChain',
+    description: 'Search CatChain.',
   },
   '/surgeries': {
-    title: 'Care Records | PetChain',
-    description: 'Manage care entries in your PetChain account.',
+    title: 'Care Records | CatChain',
+    description: 'Manage care entries in your CatChain account.',
   },
   '/transactions': {
-    title: 'Transactions | PetChain',
-    description: 'Review transactions in your PetChain account.',
+    title: 'Transactions | CatChain',
+    description: 'Review transactions in your CatChain account.',
   },
   '/two-factor': {
-    title: 'Two-Factor Authentication | PetChain',
-    description: 'Manage two-factor authentication for your PetChain account.',
+    title: 'Two-Factor Authentication | CatChain',
+    description: 'Manage two-factor authentication for your CatChain account.',
   },
   '/verify-account': {
-    title: 'Verify Account | PetChain',
-    description: 'Verify your PetChain account.',
+    title: 'Verify Account | CatChain',
+    description: 'Verify your CatChain account.',
   },
   '/verify-email': {
-    title: 'Verify Email | PetChain',
-    description: 'Verify the email address for your PetChain account.',
+    title: 'Verify Email | CatChain',
+    description: 'Verify the email address for your CatChain account.',
   },
   '/reset-password': {
-    title: 'Reset Password | PetChain',
-    description: 'Choose a new password for your PetChain account.',
+    title: 'Reset Password | CatChain',
+    description: 'Choose a new password for your CatChain account.',
   },
   '/performance': {
-    title: 'Performance | PetChain',
-    description: 'Review PetChain performance metrics.',
+    title: 'Performance | CatChain',
+    description: 'Review CatChain performance metrics.',
   },
 };
 
@@ -198,8 +198,8 @@ export function getRouteMetadata(
   siteOrigin = resolveSiteOrigin()
 ): RouteMetadataValues {
   const route = ROUTE_COPY[pathname] ?? {
-    title: 'PetChain',
-    description: 'Manage your PetChain account.',
+    title: 'CatChain',
+    description: 'Manage your CatChain account.',
   };
   const origin = (() => {
     try {
@@ -242,7 +242,7 @@ export default function RouteMetadata({ pathname, asPath }: RouteMetadataProps) 
       <link rel="canonical" href={metadata.canonical} />
       <meta name="robots" content={metadata.robots} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="PetChain" />
+      <meta property="og:site_name" content="CatChain" />
       <meta property="og:title" content={metadata.title} />
       <meta property="og:description" content={metadata.description} />
       <meta property="og:url" content={metadata.canonical} />

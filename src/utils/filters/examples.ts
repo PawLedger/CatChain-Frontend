@@ -2,7 +2,7 @@
  * Filter Builder Pattern Examples
  *
  * This file demonstrates how to use the filter builder classes
- * for querying and filtering events in the petChain application.
+ * for querying and filtering events in the catChain application.
  */
 
 import { EventFilterBuilder, Event } from './EventFilterBuilder';

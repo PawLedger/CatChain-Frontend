@@ -70,9 +70,9 @@ Object.defineProperty(window, 'localStorage', { value: localStorageMock });
 // Helpers
 // ---------------------------------------------------------------------------
 
-const PROFILE_KEY = 'petchain_freshness_profile';
-const MEDICAL_KEY = 'petchain_freshness_medicalHistory';
-const EMERGENCY_KEY = 'petchain_freshness_emergency';
+const PROFILE_KEY = 'catchain_freshness_profile';
+const MEDICAL_KEY = 'catchain_freshness_medicalHistory';
+const EMERGENCY_KEY = 'catchain_freshness_emergency';
 
 // ---------------------------------------------------------------------------
 // Tests
@@ -112,11 +112,11 @@ describe('useDataFreshness', () => {
 
   it('exposes the correct source label for each category', () => {
     const { result } = renderHook(() => useDataFreshness());
-    expect(result.current.freshness.profile.source).toBe('PetChain User API');
+    expect(result.current.freshness.profile.source).toBe('CatChain User API');
     expect(result.current.freshness.medicalHistory.source).toBe(
-      'PetChain Medical Records API'
+      'CatChain Medical Records API'
     );
-    expect(result.current.freshness.emergency.source).toBe('PetChain Pet Emergency API');
+    expect(result.current.freshness.emergency.source).toBe('CatChain Pet Emergency API');
   });
 
   // -------------------------------------------------------------------------

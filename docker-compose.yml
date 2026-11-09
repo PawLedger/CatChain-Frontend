@@ -4,12 +4,12 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: petchain_backend
+    container_name: catchain_backend
     restart: unless-stopped
     ports:
       - '3001:4000'
     environment:
-      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/petchain_db
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/catchain_db
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - CLAMAV_HOST=clamav
@@ -28,14 +28,14 @@ services:
       retries: 3
       start_period: 10s
     networks:
-      - petchain_network
+      - catchain_network
 
   # 2. Next.js Frontend
   frontend:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: petchain_frontend
+    container_name: catchain_frontend
     restart: unless-stopped
     ports:
       - '3000:3000'
@@ -44,17 +44,17 @@ services:
     depends_on:
       - backend
     networks:
-      - petchain_network
+      - catchain_network
 
   # 3. Database
   postgres:
     image: postgres:16-alpine
-    container_name: petchain_postgres
+    container_name: catchain_postgres
     restart: unless-stopped
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: petchain_db
+      POSTGRES_DB: catchain_db
     ports:
       - '5432:5432'
     volumes:
@@ -65,12 +65,12 @@ services:
       timeout: 5s
       retries: 5
     networks:
-      - petchain_network
+      - catchain_network
 
   # 4. Redis
   redis:
     image: redis:7-alpine
-    container_name: petchain_redis
+    container_name: catchain_redis
     restart: unless-stopped
     ports:
       - '6379:6379'
@@ -78,27 +78,27 @@ services:
       - redis_data:/data
     command: redis-server --appendonly yes
     networks:
-      - petchain_network
+      - catchain_network
 
   # 5. Database Admin UI
   pgadmin:
     image: dpage/pgadmin4:latest
-    container_name: petchain_pgadmin
+    container_name: catchain_pgadmin
     restart: unless-stopped
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@petchain.com
+      PGADMIN_DEFAULT_EMAIL: admin@catchain.com
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
       - '5050:80'
     depends_on:
       - postgres
     networks:
-      - petchain_network
+      - catchain_network
 
   # 6. Antivirus
   clamav:
     image: clamav/clamav:latest
-    container_name: petchain_clamav
+    container_name: catchain_clamav
     restart: unless-stopped
     ports:
       - '3310:3310'
@@ -113,7 +113,7 @@ services:
       retries: 3
       start_period: 120s
     networks:
-      - petchain_network
+      - catchain_network
 
 volumes:
   postgres_data:
@@ -121,5 +121,5 @@ volumes:
   clamav_data:
 
 networks:
-  petchain_network:
+  catchain_network:
     driver: bridge

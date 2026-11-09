@@ -68,7 +68,7 @@ describe('PhotoGallery keyboard reorder controls', () => {
   it('announces the resulting position to assistive technology', () => {
     renderGallery();
     const listener = jest.fn();
-    window.addEventListener('petchain-announcement', listener);
+    window.addEventListener('catchain-announcement', listener);
 
     fireEvent.click(screen.getByRole('button', { name: /move alpha\.jpg down/i }));
 
@@ -76,7 +76,7 @@ describe('PhotoGallery keyboard reorder controls', () => {
     const event = listener.mock.calls[0][0] as CustomEvent<{ message: string }>;
     expect(event.detail.message).toBe('Photo moved down to position 2 of 3.');
 
-    window.removeEventListener('petchain-announcement', listener);
+    window.removeEventListener('catchain-announcement', listener);
   });
 
   it('does not fire a reorder when a move would leave the gallery', () => {

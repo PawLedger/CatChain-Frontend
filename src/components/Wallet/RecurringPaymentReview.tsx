@@ -31,7 +31,7 @@ import {
   AlertTriangle,
 } from 'lucide-react';
 import type { RecurringPaymentIntent } from '../types/recurringPayment';
-import { useRecurringPaymentReview } from '../hooks/useRecurringPaymentReview';
+import { useRecurringPaymentReview } from '../../hooks/useRecurringPaymentReview';
 
 export interface RecurringPaymentReviewProps {
   sourcePublicKey: string;

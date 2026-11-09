@@ -6,7 +6,7 @@ import React from 'react';
 
 const renderWithDataMode = (ui: React.ReactElement, mode: 'full' | 'reduced' = 'full') => {
   if (mode === 'reduced') {
-    localStorage.setItem('petchain-data-mode', 'reduced');
+    localStorage.setItem('catchain-data-mode', 'reduced');
   }
 
   return render(<DataModeProvider>{ui}</DataModeProvider>);

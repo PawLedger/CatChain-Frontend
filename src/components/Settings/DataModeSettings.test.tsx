@@ -6,7 +6,7 @@ import React from 'react';
 
 const renderWithProvider = (mode: 'full' | 'reduced' = 'full') => {
   if (mode === 'reduced') {
-    localStorage.setItem('petchain-data-mode', 'reduced');
+    localStorage.setItem('catchain-data-mode', 'reduced');
   }
 
   return render(
@@ -51,7 +51,7 @@ describe('DataModeSettings Component', () => {
       expect(container).toBeInTheDocument();
 
       // Switch to reduced mode and check for WifiOff icon
-      localStorage.setItem('petchain-data-mode', 'reduced');
+      localStorage.setItem('catchain-data-mode', 'reduced');
       rerender(
         <DataModeProvider>
           <DataModeSettings />
@@ -83,7 +83,7 @@ describe('DataModeSettings Component', () => {
 
       const reducedModeRadio = screen.getByRole('radio', { name: /reduced data mode/i });
       expect(reducedModeRadio).toBeChecked();
-      expect(localStorage.getItem('petchain-data-mode')).toBe('reduced');
+      expect(localStorage.getItem('catchain-data-mode')).toBe('reduced');
     });
 
     it('should switch to full mode when clicked', () => {
@@ -94,7 +94,7 @@ describe('DataModeSettings Component', () => {
 
       const fullModeRadio = screen.getByRole('radio', { name: /full mode/i });
       expect(fullModeRadio).toBeChecked();
-      expect(localStorage.getItem('petchain-data-mode')).toBe('full');
+      expect(localStorage.getItem('catchain-data-mode')).toBe('full');
     });
   });
 

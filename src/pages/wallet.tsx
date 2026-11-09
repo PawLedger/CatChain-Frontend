@@ -121,7 +121,7 @@ export default function WalletPage() {
   return (
     <>
       <Head>
-        <title>Wallet — PetChain</title>
+        <title>Wallet — CatChain</title>
       </Head>
 
       <div className="min-h-screen bg-gray-50">
@@ -129,7 +129,7 @@ export default function WalletPage() {
         <div className="bg-white border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
             <div className="flex items-center gap-2 text-sm text-gray-400 mb-1">
-              <span>PetChain</span>
+              <span>CatChain</span>
               <ChevronRight size={14} />
               <span className="text-gray-700 font-medium">Wallet</span>
             </div>

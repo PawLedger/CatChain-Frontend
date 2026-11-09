@@ -55,7 +55,7 @@ function ErrorPage({ statusCode, correlationId, routeGroup, currentPath }: Error
   return (
     <>
       <Head>
-        <title>{`${statusCode} — ${title} — PetChain`}</title>
+        <title>{`${statusCode} — ${title} — CatChain`}</title>
         <meta name="robots" content="noindex" />
       </Head>
       <div

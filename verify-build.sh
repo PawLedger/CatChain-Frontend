@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Build Verification Script for PetChain Frontend
+# Build Verification Script for CatChain Frontend
 # This script verifies that both frontend and backend build successfully
 
 set -e  # Exit on error
 
-echo "🚀 PetChain Build Verification"
+echo "🚀 CatChain Build Verification"
 echo "================================"
 echo ""
 

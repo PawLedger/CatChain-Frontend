@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 
-const STORAGE_KEY = 'petchain-unit-preference';
+const STORAGE_KEY = 'catchain-unit-preference';
 
 export type UnitSystem = 'metric' | 'customary';
 export type UnitPreferenceSource = 'locale' | 'user';

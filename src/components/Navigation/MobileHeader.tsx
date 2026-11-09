@@ -85,13 +85,13 @@ export default function MobileHeader() {
 
         <Link href="/" className="flex items-center gap-2 mr-auto">
           <Image
-            src="/PETCHAIN.jpeg"
-            alt="PetChain"
+            src="/CATCHAIN.jpeg"
+            alt="CatChain"
             width={28}
             height={28}
             className="rounded-lg"
           />
-          <span className="font-bold text-blue-700 text-sm">PetChain</span>
+          <span className="font-bold text-blue-700 text-sm">CatChain</span>
         </Link>
 
         <button
@@ -138,13 +138,13 @@ export default function MobileHeader() {
         <div className="flex items-center justify-between px-4 py-4 border-b border-gray-100">
           <Link href="/" className="flex items-center gap-2" onClick={() => setDrawerOpen(false)}>
             <Image
-              src="/PETCHAIN.jpeg"
-              alt="PetChain"
+              src="/CATCHAIN.jpeg"
+              alt="CatChain"
               width={32}
               height={32}
               className="rounded-lg"
             />
-            <span className="font-bold text-blue-700">PetChain</span>
+            <span className="font-bold text-blue-700">CatChain</span>
           </Link>
           <button
             onClick={() => setDrawerOpen(false)}

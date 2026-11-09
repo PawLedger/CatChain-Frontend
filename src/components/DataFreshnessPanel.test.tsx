@@ -30,7 +30,7 @@ function makeFreshness(overrides?: Partial<CategoryFreshness>): CategoryFreshnes
     lastRefreshedAt: null,
     isRefreshing: false,
     error: null,
-    source: 'PetChain Test API',
+    source: 'CatChain Test API',
     ...overrides,
   };
 }
@@ -39,9 +39,9 @@ type FreshnessMap = Record<DataCategory, CategoryFreshness>;
 
 function makeDefaultFreshness(overrides?: Partial<FreshnessMap>): FreshnessMap {
   return {
-    profile: makeFreshness({ source: 'PetChain User API' }),
-    medicalHistory: makeFreshness({ source: 'PetChain Medical Records API' }),
-    emergency: makeFreshness({ source: 'PetChain Pet Emergency API' }),
+    profile: makeFreshness({ source: 'CatChain User API' }),
+    medicalHistory: makeFreshness({ source: 'CatChain Medical Records API' }),
+    emergency: makeFreshness({ source: 'CatChain Pet Emergency API' }),
     ...overrides,
   };
 }
@@ -87,9 +87,9 @@ describe('DataFreshnessPanel', () => {
 
   it('displays the source label for each category', () => {
     renderPanel();
-    expect(screen.getByText('PetChain User API')).toBeInTheDocument();
-    expect(screen.getByText('PetChain Medical Records API')).toBeInTheDocument();
-    expect(screen.getByText('PetChain Pet Emergency API')).toBeInTheDocument();
+    expect(screen.getByText('CatChain User API')).toBeInTheDocument();
+    expect(screen.getByText('CatChain Medical Records API')).toBeInTheDocument();
+    expect(screen.getByText('CatChain Pet Emergency API')).toBeInTheDocument();
   });
 
   // -------------------------------------------------------------------------

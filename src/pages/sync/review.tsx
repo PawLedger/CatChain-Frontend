@@ -37,7 +37,7 @@ function SyncReviewContent() {
   return (
     <>
       <Head>
-        <title>Review queued changes — PetChain</title>
+        <title>Review queued changes — CatChain</title>
         {/* This page shows user-specific offline data; prevent indexing. */}
         <meta name="robots" content="noindex,nofollow,noarchive" />
         <meta name="referrer" content="no-referrer" />
@@ -53,7 +53,7 @@ function SyncReviewContent() {
             href="/"
             className="text-sm font-medium text-blue-700 hover:text-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
           >
-            ← PetChain
+            ← CatChain
           </Link>
         </nav>
 

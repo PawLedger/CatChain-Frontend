@@ -193,7 +193,7 @@ function ReviewForm({
           maxLength={500}
           disabled={isSubmitting}
           className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none ring-blue-500/30 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-400 transition-all resize-none"
-          placeholder="Share your experience with PetChain..."
+          placeholder="Share your experience with CatChain..."
           required
         />
         <p className="mt-1 text-xs text-gray-400 text-right">
@@ -315,8 +315,8 @@ export default function ReviewPage() {
   return (
     <>
       <Head>
-        <title>Rate Us | PetChain</title>
-        <meta name="description" content="Rate your experience with PetChain. Your feedback helps us improve." />
+        <title>Rate Us | CatChain</title>
+        <meta name="description" content="Rate your experience with CatChain. Your feedback helps us improve." />
       </Head>
 
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-green-50 p-4 md:p-8 flex flex-col transition-all duration-300">

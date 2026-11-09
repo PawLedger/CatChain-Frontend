@@ -35,7 +35,7 @@ export function createTransactionReceiptPdf(
   const networkLabel = network === 'TESTNET' ? 'Stellar Testnet' : 'Stellar Mainnet';
   const timestamp = formatTimestamp(transaction.timestamp);
   const lines = [
-    'PetChain Wallet Transaction Receipt',
+    'CatChain Wallet Transaction Receipt',
     'Status: Confirmed',
     `Network: ${networkLabel}`,
     `Transaction hash: ${transaction.hash}`,
@@ -88,7 +88,7 @@ export function downloadTransactionReceiptPdf(
   const link = document.createElement('a');
   const safeHash = transaction.hash.replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 16);
   link.href = url;
-  link.download = `petchain-receipt-${safeHash}.pdf`;
+  link.download = `catchain-receipt-${safeHash}.pdf`;
   link.style.display = 'none';
   document.body.appendChild(link);
   link.click();

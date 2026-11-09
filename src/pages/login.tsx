@@ -76,13 +76,13 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="flex flex-col items-center gap-3">
           <Image
-            src="/PETCHAIN.jpeg"
-            alt="PetChain"
+            src="/CATCHAIN.jpeg"
+            alt="CatChain"
             width={64}
             height={64}
             className="rounded-2xl shadow-md"
           />
-          <h1 className="text-2xl font-bold text-gray-900">Sign in to PetChain</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Sign in to CatChain</h1>
           <p className="text-sm text-gray-500">
             No account?{' '}
             <Link href="/register" className="font-semibold text-blue-600 hover:text-blue-700">

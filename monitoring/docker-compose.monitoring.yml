@@ -6,7 +6,7 @@ version: '3.8'
 services:
   prometheus:
     image: prom/prometheus:v2.51.0
-    container_name: petchain_prometheus
+    container_name: catchain_prometheus
     restart: unless-stopped
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
@@ -18,11 +18,11 @@ services:
     ports:
       - '9090:9090'
     networks:
-      - petchain_network
+      - catchain_network
 
   grafana:
     image: grafana/grafana:10.4.0
-    container_name: petchain_grafana
+    container_name: catchain_grafana
     restart: unless-stopped
     environment:
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-admin}
@@ -36,22 +36,22 @@ services:
     depends_on:
       - prometheus
     networks:
-      - petchain_network
+      - catchain_network
 
   alertmanager:
     image: prom/alertmanager:v0.27.0
-    container_name: petchain_alertmanager
+    container_name: catchain_alertmanager
     restart: unless-stopped
     volumes:
       - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
     ports:
       - '9093:9093'
     networks:
-      - petchain_network
+      - catchain_network
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.13.0
-    container_name: petchain_elasticsearch
+    container_name: catchain_elasticsearch
     restart: unless-stopped
     environment:
       discovery.type: single-node
@@ -62,11 +62,11 @@ services:
     ports:
       - '9200:9200'
     networks:
-      - petchain_network
+      - catchain_network
 
   kibana:
     image: docker.elastic.co/kibana/kibana:8.13.0
-    container_name: petchain_kibana
+    container_name: catchain_kibana
     restart: unless-stopped
     environment:
       ELASTICSEARCH_HOSTS: http://elasticsearch:9200
@@ -75,20 +75,20 @@ services:
     depends_on:
       - elasticsearch
     networks:
-      - petchain_network
+      - catchain_network
 
   filebeat:
     image: docker.elastic.co/beats/filebeat:8.13.0
-    container_name: petchain_filebeat
+    container_name: catchain_filebeat
     restart: unless-stopped
     user: root
     volumes:
       - ./elk/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
-      - /var/log/petchain:/var/log/petchain:ro
+      - /var/log/catchain:/var/log/catchain:ro
     depends_on:
       - elasticsearch
     networks:
-      - petchain_network
+      - catchain_network
 
 volumes:
   prometheus_data:
@@ -96,5 +96,5 @@ volumes:
   elasticsearch_data:
 
 networks:
-  petchain_network:
+  catchain_network:
     external: true

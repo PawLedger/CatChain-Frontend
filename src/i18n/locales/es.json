@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "PetChain",
+    "title": "CatChain",
     "tagline": "Pagos de servicios públicos descentralizados en la blockchain Stellar",
     "description": "Paga tus facturas de servicios públicos usando criptomoneda en la red Stellar",
     "footer": {
@@ -107,8 +107,8 @@
     }
   },
   "about": {
-    "title": "Acerca de PetChain",
-    "description": "PetChain es una plataforma de pago de servicios públicos descentralizada construida en la blockchain Stellar. Permitimos pagos de facturas de servicios seguros, transparentes y eficientes usando criptomoneda.",
+    "title": "Acerca de CatChain",
+    "description": "CatChain es una plataforma de pago de servicios públicos descentralizada construida en la blockchain Stellar. Permitimos pagos de facturas de servicios seguros, transparentes y eficientes usando criptomoneda.",
     "features": {
       "title": "Características Clave",
       "secure": "Transacciones Seguras",
@@ -151,7 +151,7 @@
   },
   "rate": {
     "title": "Califica Tu Experiencia",
-    "description": "Ayúdanos a mejorar calificando tu experiencia con PetChain.",
+    "description": "Ayúdanos a mejorar calificando tu experiencia con CatChain.",
     "rating": {
       "excellent": "Excelente",
       "good": "Bueno",
@@ -161,7 +161,7 @@
     },
     "review": {
       "title": "Escribe una Reseña",
-      "placeholder": "Comparte tu experiencia con PetChain...",
+      "placeholder": "Comparte tu experiencia con CatChain...",
       "submit": "Enviar Reseña",
       "thankYou": "¡Gracias por tu retroalimentación!"
     }

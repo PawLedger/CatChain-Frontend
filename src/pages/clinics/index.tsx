@@ -70,7 +70,7 @@ export default function ClinicDirectory() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-green-50 flex flex-col font-sans text-gray-900">
       <Head>
-        <title>Clinics | PetChain</title>
+        <title>Clinics | CatChain</title>
         <meta
           name="description"
           content="Find the best veterinary clinics for your pet."
@@ -260,7 +260,7 @@ export default function ClinicDirectory() {
 
       <footer className="text-center text-gray-500 py-12 bg-white/40 border-t border-white/60">
         <span>
-          © 2024 PetChain Clinic Directory. Premium Care for Every Pet.
+          © 2024 CatChain Clinic Directory. Premium Care for Every Pet.
         </span>
       </footer>
     </div>

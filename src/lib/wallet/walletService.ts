@@ -6,7 +6,7 @@
  * Boundary contract:
  *   ✅ Key generation — produces Ed25519 Stellar keypairs via stellar-sdk.
  *   ✅ Local encryption — stores only AES-256-GCM ciphertext in localStorage
- *      under 'petchain_wallets'. The plaintext secret key is NEVER persisted.
+ *      under 'catchain_wallets'. The plaintext secret key is NEVER persisted.
  *   ✅ Wallet CRUD — create, read (from localStorage), update label, delete.
  *   ✅ PIN verification with exponential back-off against brute force.
  *   ✅ Horizon interactions — balance / account data, fee stats, transaction
@@ -15,7 +15,7 @@
  *      checksum tamper detection.
  *   ✅ Testnet funding via Friendbot.
  *
- *   ❌ NOT responsible for HTTP transport to the PetChain backend — that
+ *   ❌ NOT responsible for HTTP transport to the CatChain backend — that
  *      belongs to walletAPI (src/lib/api/walletAPI.ts). walletService calls
  *      walletAPI.registerWallet() as a fire-and-forget side-effect only.
  *   ❌ NOT responsible for balance polling with caching — that belongs to
@@ -35,7 +35,6 @@ import {
   getNetworkConfigFor,
   isWalletNetworkActive,
 } from '../blockchain/network';
-import { randomUUID } from 'crypto';
 import { walletAPI } from '../api/walletAPI';
 import type {
   WalletAccount,
@@ -48,10 +47,8 @@ import type {
   FeeEstimate,
   WalletNetwork,
 } from '../../types/wallet';
-import { walletAPI } from '../api/walletAPI';
-import { getStellarNetwork } from '../blockchain/network';
 
-const STORAGE_KEY = 'petchain_wallets';
+const STORAGE_KEY = 'catchain_wallets';
 
 function isValidWalletRecords(data: unknown): data is WalletAccount[] {
   if (!Array.isArray(data)) return false;

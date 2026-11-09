@@ -100,7 +100,7 @@ jest.mock('../../api/walletAPI', () => ({
 import { computeChecksum, decryptSecretKey } from '../walletCrypto';
 import walletService from '../walletService';
 
-const STORAGE_KEY = 'petchain_wallets';
+const STORAGE_KEY = 'catchain_wallets';
 const GOOD_CHECKSUM =
   'int_checksum_64xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 

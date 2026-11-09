@@ -5,14 +5,14 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-green-50 flex flex-col">
       <Head>
-        <title>About PetChain</title>
-        <meta name="description" content="Learn more about PetChain, our mission, team, and technology." />
+        <title>About CatChain</title>
+        <meta name="description" content="Learn more about CatChain, our mission, team, and technology." />
       </Head>
       
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center py-16 px-4 text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold text-blue-700 mb-4 drop-shadow-sm">
-          About PetChain
+          About CatChain
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mb-6">
           Our mission is to provide secure, decentralized, and vet-ready health tracking for every pet, empowering owners with control and privacy.
@@ -75,12 +75,12 @@ export default function About() {
           </div>
           <div>
             <h3 className="font-bold text-gray-900 mb-2">Links</h3>
-            <p><a href="https://github.com/DogStark/petChain-Frontend" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">GitHub Repository</a></p>
+            <p><a href="https://github.com/devnWisdom/catChain-Frontend" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">GitHub Repository</a></p>
             <p><Link href="/docs" className="text-blue-600 hover:underline">Documentation</Link></p>
           </div>
           <div>
             <h3 className="font-bold text-gray-900 mb-2">Contact</h3>
-            <p><a href="mailto:hello@petchain.local" className="text-blue-600 hover:underline">hello@petchain.local</a></p>
+            <p><a href="mailto:hello@catchain.local" className="text-blue-600 hover:underline">hello@catchain.local</a></p>
             <p className="text-sm text-gray-500 mt-1">Response time: ~24 hours</p>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function About() {
       <footer className="text-center text-gray-500 py-6 mt-auto">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
           <Link href="/" className="hover:text-blue-600">← Back to Home</Link>
-          <span>© 2024 PetChain. MIT License.</span>
+          <span>© 2024 CatChain. MIT License.</span>
         </div>
       </footer>
     </div>

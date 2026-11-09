@@ -104,7 +104,7 @@ export default function WalletDashboard({
         </div>
         <h2 className="text-2xl font-bold text-gray-900 mb-2">No Wallets Yet</h2>
         <p className="text-gray-500 mb-6 max-w-sm">
-          Create a new Stellar wallet or import an existing one to manage your PetChain assets.
+          Create a new Stellar wallet or import an existing one to manage your CatChain assets.
         </p>
         <button
           onClick={onAddWallet}

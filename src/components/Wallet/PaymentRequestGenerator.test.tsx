@@ -118,7 +118,7 @@ describe('PaymentRequestGenerator Component', () => {
       loading: false,
       error: null,
       activeRequest: mockReq,
-      shareableUrl: 'https://petchain.app/pay/request?req=xyz123',
+      shareableUrl: 'https://catchain.app/pay/request?req=xyz123',
       timeRemaining: '59m 50s remaining',
       createPaymentRequest: mockCreatePaymentRequest,
       reset: mockReset,
@@ -127,7 +127,7 @@ describe('PaymentRequestGenerator Component', () => {
     render(<PaymentRequestGenerator defaultDestination={validPubKey} />);
 
     expect(screen.getByText(/Payment Request Ready to Share/i)).toBeInTheDocument();
-    expect(screen.getByDisplayValue('https://petchain.app/pay/request?req=xyz123')).toBeInTheDocument();
+    expect(screen.getByDisplayValue('https://catchain.app/pay/request?req=xyz123')).toBeInTheDocument();
     expect(screen.getByText(/59m 50s remaining/i)).toBeInTheDocument();
 
     const copyBtn = screen.getByRole('button', { name: /Copy payment link/i });

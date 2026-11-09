@@ -18,7 +18,7 @@
 export const CLIPBOARD_TTL_MS = 30_000;
 
 /** Placeholder written to the clipboard after TTL expires. */
-const OVERWRITE_PLACEHOLDER = '[cleared by PetChain – do not paste]';
+const OVERWRITE_PLACEHOLDER = '[cleared by CatChain – do not paste]';
 
 /** Tracks the active cleanup timer so it can be reset on successive copies. */
 let cleanupTimer: ReturnType<typeof setTimeout> | null = null;

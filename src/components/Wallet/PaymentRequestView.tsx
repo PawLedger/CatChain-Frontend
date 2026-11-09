@@ -93,7 +93,7 @@ export const PaymentRequestView: React.FC<Props> = ({ initialReqPayload }) => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
       <Head>
-        <title>Payment Request | PetChain</title>
+        <title>Payment Request | CatChain</title>
         <meta name="description" content="Review and pay a requested asset transfer securely on Stellar" />
       </Head>
 

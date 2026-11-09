@@ -10,7 +10,7 @@ export default function PayRequestPage() {
   return (
     <>
       <Head>
-        <title>Payment Request | PetChain</title>
+        <title>Payment Request | CatChain</title>
         <meta
           name="description"
           content="Review and approve payment for requested funds on Stellar network"

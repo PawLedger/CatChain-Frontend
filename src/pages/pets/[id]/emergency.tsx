@@ -141,7 +141,7 @@ export default function EmergencyAccessPage() {
     <div className="min-h-screen bg-red-50">
       <Head>
         <title>
-          {viewMode === 'preview' ? 'Scanner Preview — PetChain' : 'EMERGENCY RECORD — PetChain'}
+          {viewMode === 'preview' ? 'Scanner Preview — CatChain' : 'EMERGENCY RECORD — CatChain'}
         </title>
         <meta
           name="viewport"
@@ -503,7 +503,7 @@ export default function EmergencyAccessPage() {
           <div className="flex items-center justify-center gap-2 text-gray-400 mb-2">
             <Dna size={16} />
             <span className="font-black tracking-widest text-xs uppercase">
-              Verified by PetChain
+              Verified by CatChain
             </span>
           </div>
           <p className="text-[10px] text-gray-400 font-bold max-w-[200px] mx-auto uppercase">

@@ -2,7 +2,7 @@
 
 ## Summary
 
-This document describes the comprehensive payment integration tests implemented for petChain to ensure reliability and correctness of payment flow functionality.
+This document describes the comprehensive payment integration tests implemented for catChain to ensure reliability and correctness of payment flow functionality.
 
 ## Implementation Details
 
@@ -127,7 +127,7 @@ npx ts-node --project tsconfig.test.json tests/integration/payment.test.ts
 - Asset codes and issuers can be parsed correctly
 ```
 
-**Why It Matters**: petChain must support multiple asset types for flexibility.
+**Why It Matters**: catChain must support multiple asset types for flexibility.
 
 ### 9. Fee Management (3 tests)
 **Purpose**: Ensure transaction fees are properly managed

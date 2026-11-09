@@ -21,13 +21,11 @@ export default function HeaderComponent() {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">
           <Link href="/" className="hover:text-blue-200">
-            PetChain
+            CatChain
           </Link>
         </h1>
         <nav aria-label="Main navigation">
           <ul className="flex space-x-4 items-center">
-        <nav>
-          <ul className="flex space--4 items-center">
             <li><Link href="/" className="hover:text-blue-200">Home</Link></li>
             <li><Link href="/search" className="hover:text-blue-200">Search</Link></li>
             <li><Link href="/dental" className="hover:text-blue-200 flex items-center gap-1">🦷 Dental</Link></li>

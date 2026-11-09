@@ -17,7 +17,7 @@ We take security vulnerabilities seriously. Please follow these steps:
 
 Instead, please:
 
-1. **Email**: Send details to security@petchain.com
+1. **Email**: Send details to security@catchain.com
 2. **Telegram**: Contact [@llins_x](https://t.me/llins_x) privately
 3. **Include**:
    - Description of the vulnerability
@@ -75,4 +75,4 @@ Emergency scan events are intentionally designed as low-risk telemetry. The fron
 - Don't share private keys
 - Verify QR codes before scanning
 
-Thank you for helping keep PetChain secure! 🔐
+Thank you for helping keep CatChain secure! 🔐

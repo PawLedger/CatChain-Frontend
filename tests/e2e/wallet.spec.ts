@@ -32,7 +32,7 @@ test.describe('Stellar wallet journeys', () => {
       await page.addInitScript(
         () =>
           localStorage.setItem(
-            'petchain_wallets',
+            'catchain_wallets',
             JSON.stringify([
               {
                 id: 'wallet_unbacked',

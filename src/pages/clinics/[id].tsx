@@ -143,10 +143,10 @@ export default function ClinicProfile() {
   const handleShare = useCallback(async () => {
     const url =
       typeof window !== "undefined" ? window.location.href : "";
-    const title = clinic ? `${clinic.name} — PetChain` : "PetChain Clinic";
+    const title = clinic ? `${clinic.name} — CatChain` : "CatChain Clinic";
     const text = clinic
-      ? `Check out ${clinic.name} on PetChain!`
-      : "Check out this clinic on PetChain!";
+      ? `Check out ${clinic.name} on CatChain!`
+      : "Check out this clinic on CatChain!";
 
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
@@ -173,7 +173,7 @@ export default function ClinicProfile() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-green-50 flex flex-col font-sans">
         <Head>
-          <title>Loading clinic details… | PetChain</title>
+          <title>Loading clinic details… | CatChain</title>
         </Head>
         <HeaderComponent />
         <main className="flex-grow flex flex-col items-center justify-center gap-4 text-gray-500">
@@ -189,7 +189,7 @@ export default function ClinicProfile() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-green-50 flex flex-col font-sans">
         <Head>
-          <title>Clinic not found | PetChain</title>
+          <title>Clinic not found | CatChain</title>
         </Head>
         <HeaderComponent />
         <main className="flex-grow flex flex-col items-center justify-center gap-6 text-center px-4">
@@ -214,7 +214,7 @@ export default function ClinicProfile() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-green-50 flex flex-col font-sans">
         <Head>
-          <title>Error | PetChain</title>
+          <title>Error | CatChain</title>
         </Head>
         <HeaderComponent />
         <main className="flex-grow flex flex-col items-center justify-center gap-6 text-center px-4">
@@ -241,7 +241,7 @@ export default function ClinicProfile() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-green-50 flex flex-col font-sans text-gray-900">
       <Head>
-        <title>{clinic.name} | PetChain</title>
+        <title>{clinic.name} | CatChain</title>
         <meta
           name="description"
           content={clinic.description}
@@ -420,13 +420,6 @@ export default function ClinicProfile() {
         </div>
       </section>
 
-      {/* Main Content Info */}
-      <main id="main-content" className="container mx-auto px-4 py-8 max-w-7xl -mt-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {/* Main Content Area */}
-          <div className="lg:col-span-8 space-y-8">
-            {/* Tabs Navigation */}
-            <nav className="flex flex-wrap gap-2 p-1 bg-white/60 backdrop-blur-sm rounded-3xl border border-white/40 shadow-sm overflow-x-auto">
       {/* ── Main content ── */}
       <main className="container mx-auto px-4 py-10 max-w-7xl flex flex-col lg:flex-row gap-10">
         {/* Left — tabbed content */}
@@ -606,7 +599,7 @@ export default function ClinicProfile() {
       </main>
 
       <footer className="text-center text-gray-500 py-8 bg-white/40 border-t border-white/60 mt-auto">
-        <span>© 2024 PetChain. Premium Care for Every Pet.</span>
+        <span>© 2024 CatChain. Premium Care for Every Pet.</span>
       </footer>
 
       {/* ── Booking modal ── */}

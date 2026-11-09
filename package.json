@@ -1,5 +1,5 @@
 {
-  "name": "pet-medical-tracka",
+  "name": "catchain-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -44,6 +44,7 @@
     "@types/speakeasy": "^2.0.10",
     "axios": "^1.15.0",
     "browser-image-compression": "^2.0.2",
+    "busboy": "^1.6.0",
     "date-fns": "^4.1.0",
     "firebase": "^11.10.0",
     "lucide-react": "^0.563.0",
@@ -72,8 +73,8 @@
     "eslint": "^9",
     "eslint-config-next": "15.2.0",
     "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
     "jest-axe": "^10.0.0",
+    "jest-environment-jsdom": "^29.7.0",
     "prettier": "^3.8.0",
     "sharp": "^0.34.5",
     "tailwindcss": "^4",

@@ -211,7 +211,7 @@ describe('Service Worker — caching rules', () => {
       await sw.dispatch('install', installEvent);
       await Promise.all(waitUntilPromises);
 
-      const staticCache = sw.cacheStorage.get('petchain-static-v1');
+      const staticCache = sw.cacheStorage.get('catchain-static-v1');
       expect(staticCache).toBeDefined();
       // Should have the three pre-cached paths and nothing else
       const keys = await staticCache!.keys();
@@ -225,7 +225,7 @@ describe('Service Worker — caching rules', () => {
   describe('activate', () => {
     it('deletes caches not in the current allowlist', async () => {
       // Simulate a stale cache from an old SW version
-      await sw.cacheStorage.open('petchain-v2'); // old cache name
+      await sw.cacheStorage.open('catchain-v2'); // old cache name
 
       const waitUntilPromises: Promise<unknown>[] = [];
       const activateEvent = {
@@ -235,7 +235,7 @@ describe('Service Worker — caching rules', () => {
       await Promise.all(waitUntilPromises);
 
       const remainingKeys = await sw.cacheStorage.keys();
-      expect(remainingKeys).not.toContain('petchain-v2');
+      expect(remainingKeys).not.toContain('catchain-v2');
     });
 
     it('keeps current cache names after activation', async () => {
@@ -243,12 +243,12 @@ describe('Service Worker — caching rules', () => {
       const activateEvent = {
         waitUntil: (p: Promise<unknown>) => waitUntilPromises.push(p),
       };
-      await sw.cacheStorage.open('petchain-static-v1');
+      await sw.cacheStorage.open('catchain-static-v1');
       await sw.dispatch('activate', activateEvent);
       await Promise.all(waitUntilPromises);
 
       const remainingKeys = await sw.cacheStorage.keys();
-      expect(remainingKeys).toContain('petchain-static-v1');
+      expect(remainingKeys).toContain('catchain-static-v1');
     });
   });
 
@@ -257,7 +257,7 @@ describe('Service Worker — caching rules', () => {
   describe('SW_LOGOUT message', () => {
     it('deletes the dynamic cache', async () => {
       // Seed the dynamic cache with fake user data
-      const dynCache = await sw.cacheStorage.open('petchain-dynamic-v1');
+      const dynCache = await sw.cacheStorage.open('catchain-dynamic-v1');
       await dynCache.put(
         { url: 'http://localhost/api/v1/pets' },
         makeResponse('{"pets":[]}')
@@ -271,11 +271,11 @@ describe('Service Worker — caching rules', () => {
       }
 
       const keys = await sw.cacheStorage.keys();
-      expect(keys).not.toContain('petchain-dynamic-v1');
+      expect(keys).not.toContain('catchain-dynamic-v1');
     });
 
     it('does not delete the static cache on logout', async () => {
-      await sw.cacheStorage.open('petchain-static-v1');
+      await sw.cacheStorage.open('catchain-static-v1');
       const msgEvent = makeMessageEvent({ type: 'SW_LOGOUT' });
       await sw.dispatch('message', msgEvent);
       if (msgEvent.waitUntil.mock.calls.length > 0) {
@@ -283,7 +283,7 @@ describe('Service Worker — caching rules', () => {
       }
 
       const keys = await sw.cacheStorage.keys();
-      expect(keys).toContain('petchain-static-v1');
+      expect(keys).toContain('catchain-static-v1');
     });
   });
 
@@ -341,13 +341,13 @@ describe('Service Worker — caching rules', () => {
         await event.getResponse();
 
         // Static cache must be empty for this URL
-        const staticCache = sw.cacheStorage.get('petchain-static-v1');
+        const staticCache = sw.cacheStorage.get('catchain-static-v1');
         if (staticCache) {
           const cached = await staticCache.match({ url });
           expect(cached).toBeUndefined();
         }
         // Dynamic cache must also be empty for this URL
-        const dynCache = sw.cacheStorage.get('petchain-dynamic-v1');
+        const dynCache = sw.cacheStorage.get('catchain-dynamic-v1');
         if (dynCache) {
           const cached = await dynCache.match({ url });
           expect(cached).toBeUndefined();
@@ -420,7 +420,7 @@ describe('Service Worker — caching rules', () => {
   describe('static assets — cache-first', () => {
     it('returns cached asset without hitting network', async () => {
       // Pre-populate the static cache
-      const cache = await sw.cacheStorage.open('petchain-static-v1');
+      const cache = await sw.cacheStorage.open('catchain-static-v1');
       const cachedResp = makeResponse('body { color: red; }', 200);
       await cache.put({ url: 'http://localhost/styles/main.css' }, cachedResp);
 
@@ -447,7 +447,7 @@ describe('Service Worker — caching rules', () => {
       await event.getResponse();
 
       expect(fetchMock).toHaveBeenCalledTimes(1);
-      const cache = sw.cacheStorage.get('petchain-static-v1');
+      const cache = sw.cacheStorage.get('catchain-static-v1');
       expect(cache).toBeDefined();
       const stored = await cache!.match({ url });
       expect(stored).toBeDefined();
@@ -459,7 +459,7 @@ describe('Service Worker — caching rules', () => {
   describe('HTML navigation — offline fallback', () => {
     it('falls back to cached /offline page when network is unavailable', async () => {
       // Pre-cache the offline page (simulating the install step)
-      const cache = await sw.cacheStorage.open('petchain-static-v1');
+      const cache = await sw.cacheStorage.open('catchain-static-v1');
       const offlinePage = makeResponse('<html>Offline</html>', 200, {
         'Content-Type': 'text/html',
       });
@@ -502,7 +502,7 @@ describe('Service Worker — caching rules', () => {
   describe('cross-session data leak prevention', () => {
     it('user-A data is not accessible after SW_LOGOUT + user-B session', async () => {
       // Simulate: user A's medical data was (incorrectly) in dynamic cache
-      const dynCache = await sw.cacheStorage.open('petchain-dynamic-v1');
+      const dynCache = await sw.cacheStorage.open('catchain-dynamic-v1');
       await dynCache.put(
         { url: 'http://localhost/api/v1/medical/records' },
         makeResponse('{"records":[{"id":"rec-userA"}]}')
@@ -526,7 +526,7 @@ describe('Service Worker — caching rules', () => {
       expect(fetchMock).toHaveBeenCalledTimes(1);
       // The dynamic cache must have been cleared
       const remainingKeys = await sw.cacheStorage.keys();
-      expect(remainingKeys).not.toContain('petchain-dynamic-v1');
+      expect(remainingKeys).not.toContain('catchain-dynamic-v1');
     });
   });
 });

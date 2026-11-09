@@ -135,7 +135,7 @@ export default function OnboardingPage() {
   return (
     <div className={styles.page}>
       <div className={styles.brand}>
-        <span className={styles.brandName}>PetChain</span>
+        <span className={styles.brandName}>CatChain</span>
       </div>
 
       {status && (

@@ -110,8 +110,8 @@ export default function SessionsPage() {
   return (
     <>
       <Head>
-        <title>Active Sessions - PetChain</title>
-        <meta name="description" content="Manage your active PetChain sessions" />
+        <title>Active Sessions - CatChain</title>
+        <meta name="description" content="Manage your active CatChain sessions" />
       </Head>
 
       <div className="min-h-screen bg-gray-50 py-8">
@@ -120,7 +120,7 @@ export default function SessionsPage() {
             <div className="px-6 py-4 border-b border-gray-200">
               <h1 className="text-2xl font-bold text-gray-900">Active Sessions</h1>
               <p className="text-sm text-gray-600 mt-2">
-                Manage devices that are currently logged in to your PetChain account.
+                Manage devices that are currently logged in to your CatChain account.
               </p>
             </div>
 

@@ -56,7 +56,7 @@ function makeBackupFile(wallet: WalletAccount): BackupData {
 /** Creates a real File object that looks like a backup JSON file. */
 function makeBackupFileObject(wallet: WalletAccount): File {
   const backup = makeBackupFile(wallet);
-  return new File([JSON.stringify(backup)], 'petchain-backup.json', {
+  return new File([JSON.stringify(backup)], 'catchain-backup.json', {
     type: 'application/json',
   });
 }

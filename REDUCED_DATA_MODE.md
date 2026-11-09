@@ -7,7 +7,7 @@ The Reduced Data Mode feature allows low-bandwidth users to defer loading of lar
 ## Issue Reference
 
 - **Issue #1157**: [Frontend] Add reduced-data mode for low-bandwidth users
-- **Repository**: DogStark/petChain-Frontend
+- **Repository**: devnWisdom/catChain-Frontend
 
 ## Implementation Details
 

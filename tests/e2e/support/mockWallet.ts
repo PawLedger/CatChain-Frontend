@@ -91,7 +91,7 @@ export async function installWalletContext(page: Page) {
     ({ user, tokens, wallet }) => {
       localStorage.setItem('auth_tokens', JSON.stringify(tokens));
       localStorage.setItem('auth_user', JSON.stringify(user));
-      localStorage.setItem('petchain_wallets', JSON.stringify([wallet]));
+      localStorage.setItem('catchain_wallets', JSON.stringify([wallet]));
     },
     { user: WALLET_USER, tokens: WALLET_TOKENS, wallet: SEEDED_WALLET }
   );

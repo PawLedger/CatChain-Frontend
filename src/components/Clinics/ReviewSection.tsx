@@ -159,11 +159,6 @@ export default function ReviewSection({ reviews, averageRating }: ReviewSectionP
                       className={`w-3 h-3 ${s <= review.rating ? 'text-yellow-500 fill-yellow-500' : 'text-gray-200'}`}
                     />
                   ))}
-                <div>
-                  <h5 className="font-bold text-gray-900 text-sm">{review.userName}</h5>
-                  <p className="text-[10px] text-gray-500">
-                    {formatDate(review.date)}
-                  </p>
                 </div>
               </div>
 
@@ -223,19 +218,6 @@ export default function ReviewSection({ reviews, averageRating }: ReviewSectionP
                   </button>
                 </div>
               )}
-            <div className="flex items-center gap-4 mt-auto pt-4 border-t border-gray-100/50">
-              <button
-                aria-label={`Mark ${review.userName}'s review as helpful`}
-                className="flex items-center gap-1.5 text-xs font-bold text-gray-400 hover:text-blue-600 transition-colors"
-              >
-                <ThumbsUp className="w-3.5 h-3.5" aria-hidden="true" /> Helpful
-              </button>
-              <button
-                aria-label={`Reply to ${review.userName}'s review`}
-                className="flex items-center gap-1.5 text-xs font-bold text-gray-400 hover:text-blue-600 transition-colors"
-              >
-                <MessageSquare className="w-3.5 h-3.5" aria-hidden="true" /> Reply
-              </button>
             </div>
           );
         })}

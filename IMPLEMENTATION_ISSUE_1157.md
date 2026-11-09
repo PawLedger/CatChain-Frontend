@@ -3,7 +3,7 @@
 ## Reduced Data Mode for Low-Bandwidth Users
 
 **Issue**: [Frontend] Add reduced-data mode for low-bandwidth users  
-**Repository**: DogStark/petChain-Frontend  
+**Repository**: devnWisdom/catChain-Frontend  
 **Status**: ✅ Implemented & Tested
 
 ---
@@ -193,7 +193,7 @@ npm test -- --coverage --testPathPattern="DataMode"
 // From DataModeContext.test.tsx
 it('should store preference locally only', () => {
   // Verify localStorage
-  expect(localStorage.getItem('petchain-data-mode')).toBe('reduced');
+  expect(localStorage.getItem('catchain-data-mode')).toBe('reduced');
   // No network requests made
 });
 ```

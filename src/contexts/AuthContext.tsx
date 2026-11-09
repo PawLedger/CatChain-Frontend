@@ -156,7 +156,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
     // ── Cross-tab logout via BroadcastChannel ─────────────────────────────
     try {
-      const channel = new BroadcastChannel('petchain-auth');
+      const channel = new BroadcastChannel('catchain-auth');
       broadcastChannelRef.current = channel;
       channel.addEventListener('message', (event) => {
         if (event.data?.type === 'LOGOUT') {
@@ -251,12 +251,12 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     localStorage.removeItem('authToken');
 
     // Clear wallet data from localStorage so other tabs cannot read it
-    localStorage.removeItem('petchain_wallets');
+    localStorage.removeItem('catchain_wallets');
 
     // Clear IndexedDB offline caches (best-effort)
     if (typeof indexedDB !== 'undefined') {
       try {
-        indexedDB.deleteDatabase('petchain-offline');
+        indexedDB.deleteDatabase('catchain-offline');
       } catch {
         // Non-critical; cache will expire naturally
       }

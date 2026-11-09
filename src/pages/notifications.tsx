@@ -119,11 +119,11 @@ export default function NotificationsPage() {
   return (
     <>
       <Head>
-        <title>Notifications | PetChain</title>
+        <title>Notifications | CatChain</title>
       </Head>
 
       <div className="min-h-screen bg-gray-50">
-        <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
+      <main className="max-w-2xl mx-auto px-4 py-6 space-y-6">
           {/* Page header */}
           <div className="flex items-center justify-between">
             <div>
@@ -151,13 +151,6 @@ export default function NotificationsPage() {
               </button>
             )}
           </div>
-
-      <main id="main-content" className={styles.main}>
-        {error ? (
-          <div className={styles.errorContainer}>
-            <p>{error}</p>
-            <button onClick={() => router.push('/login')}>Go to Login</button>
-          {/* Tabs */}
           <div className="flex gap-1 bg-gray-100 p-1 rounded-2xl">
             {(['notifications', 'preferences'] as const).map((t) => (
               <button
@@ -232,7 +225,7 @@ export default function NotificationsPage() {
           )}
 
           {tab === 'preferences' && <NotificationPreferencesPanel />}
-        </div>
+        </main>
       </div>
     </>
   );

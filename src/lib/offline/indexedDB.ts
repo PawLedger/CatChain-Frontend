@@ -12,7 +12,7 @@
 
 import { isQuotaExceededError, reportStorageEvent } from './storageManager';
 
-const DB_NAME = 'petchain-offline';
+const DB_NAME = 'catchain-offline';
 const DB_VERSION = 2;
 
 /** How many entries to evict per recovery pass (oldest first). */

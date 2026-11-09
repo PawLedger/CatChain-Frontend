@@ -132,7 +132,7 @@ export default function ActivityLogPage() {
   return (
     <>
       <Head>
-        <title>Activity Log - PetChain</title>
+        <title>Activity Log - CatChain</title>
         <meta name="description" content="View your account activity history" />
       </Head>
 

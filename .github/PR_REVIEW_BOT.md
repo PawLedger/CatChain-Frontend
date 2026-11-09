@@ -1,7 +1,7 @@
 # PR Review Bot Documentation
 
 ## Overview
-The PetChain project uses automated PR review bots to help maintainers manage the high volume of contributions efficiently.
+The CatChain project uses automated PR review bots to help maintainers manage the high volume of contributions efficiently.
 
 ## How It Works
 

@@ -9,8 +9,8 @@ describe('getRouteMetadata', () => {
     );
 
     expect(metadata).toEqual({
-      title: 'Clinic Profile | PetChain',
-      description: 'View a veterinary clinic profile and its services on PetChain.',
+      title: 'Clinic Profile | CatChain',
+      description: 'View a veterinary clinic profile and its services on CatChain.',
       canonical: 'https://pets.example.org/clinics/clinic-123',
       robots: 'index, follow',
     });
@@ -46,8 +46,8 @@ describe('getRouteMetadata', () => {
     const metadata = getRouteMetadata('/scan/[id]', '/scan/pet-789', 'https://pets.example.org');
 
     expect(metadata.robots).toBe('noindex, nofollow');
-    expect(metadata.title).toBe('Emergency Pet Access | PetChain');
-    expect(metadata.description).toBe('PetChain emergency tag access page.');
+    expect(metadata.title).toBe('Emergency Pet Access | CatChain');
+    expect(metadata.description).toBe('CatChain emergency tag access page.');
   });
 
   it('rejects invalid origins and paths that could replace the canonical host', () => {

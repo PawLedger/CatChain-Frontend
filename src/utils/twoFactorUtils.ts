@@ -23,7 +23,7 @@ export const twoFactorUtils = {
   },
 
   // Generate QR code URL for TOTP setup
-  generateQRCodeURL: (secret: string, email: string, issuer: string = 'PetChain'): string => {
+  generateQRCodeURL: (secret: string, email: string, issuer: string = 'CatChain'): string => {
     const params = new URLSearchParams({
       secret,
       issuer,

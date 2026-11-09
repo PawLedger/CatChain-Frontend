@@ -61,7 +61,7 @@ describe('useUnitPreference', () => {
       
       expect(result.current.system).toBe('metric');
       expect(result.current.source).toBe('user');
-      expect(localStorage.getItem('petchain-unit-preference')).toBe('metric');
+      expect(localStorage.getItem('catchain-unit-preference')).toBe('metric');
     });
 
     it('allows setting system to customary', () => {
@@ -74,13 +74,13 @@ describe('useUnitPreference', () => {
       
       expect(result.current.system).toBe('customary');
       expect(result.current.source).toBe('user');
-      expect(localStorage.getItem('petchain-unit-preference')).toBe('customary');
+      expect(localStorage.getItem('catchain-unit-preference')).toBe('customary');
     });
   });
 
   describe('persistence', () => {
     it('loads persisted preference on mount', () => {
-      localStorage.setItem('petchain-unit-preference', 'customary');
+      localStorage.setItem('catchain-unit-preference', 'customary');
       mockNavigator.language = 'ja-JP'; // Locale default would be metric
       
       const { result } = renderHook(() => useUnitPreference());
@@ -90,7 +90,7 @@ describe('useUnitPreference', () => {
     });
 
     it('ignores invalid persisted values', () => {
-      localStorage.setItem('petchain-unit-preference', 'invalid');
+      localStorage.setItem('catchain-unit-preference', 'invalid');
       mockNavigator.language = 'en-US';
       
       const { result } = renderHook(() => useUnitPreference());
@@ -100,7 +100,7 @@ describe('useUnitPreference', () => {
     });
 
     it('ignores corrupted localStorage data', () => {
-      localStorage.setItem('petchain-unit-preference', '{"broken": true}');
+      localStorage.setItem('catchain-unit-preference', '{"broken": true}');
       mockNavigator.language = 'fr-FR';
       
       const { result } = renderHook(() => useUnitPreference());
@@ -149,7 +149,7 @@ describe('useUnitPreference', () => {
       });
       expect(result.current.system).toBe('customary'); // US locale default
       expect(result.current.source).toBe('locale');
-      expect(localStorage.getItem('petchain-unit-preference')).toBeNull();
+      expect(localStorage.getItem('catchain-unit-preference')).toBeNull();
     });
 
     it('resets correctly for metric locales', () => {
@@ -202,7 +202,7 @@ describe('useUnitPreference', () => {
 
   describe('edge cases', () => {
     it('handles empty localStorage value', () => {
-      localStorage.setItem('petchain-unit-preference', '');
+      localStorage.setItem('catchain-unit-preference', '');
       mockNavigator.language = 'de-DE';
       
       const { result } = renderHook(() => useUnitPreference());

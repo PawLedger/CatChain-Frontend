@@ -135,7 +135,7 @@ export default function SecurityDashboard() {
               <div className="flex justify-between h-16">
                 <div className="flex items-center">
                   <Link href="/dashboard" className="text-xl font-semibold text-gray-900">
-                    PetChain
+                    CatChain
                   </Link>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -168,7 +168,7 @@ export default function SecurityDashboard() {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link href="/dashboard" className="text-xl font-semibold text-gray-900">
-                PetChain
+                CatChain
               </Link>
             </div>
             <div className="flex items-center space-x-4">

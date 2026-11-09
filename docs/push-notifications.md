@@ -4,7 +4,7 @@ This document describes the coherent push-notification lifecycle implemented in 
 
 ## Overview
 
-Push notifications in PetChain go through four lifecycle phases managed by a single hook:
+Push notifications in CatChain go through four lifecycle phases managed by a single hook:
 
 1. **Permission** — the browser is asked once; denied state is never re-prompted.
 2. **Registration** — an FCM token (not the raw Web Push subscription endpoint) is registered with the backend.

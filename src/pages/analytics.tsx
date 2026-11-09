@@ -188,7 +188,7 @@ const AnalyticsPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-green-50 p-4 md:p-8 flex flex-col transition-all duration-300">
       <Head>
-        <title>Analytics Dashboard | PetChain</title>
+        <title>Analytics Dashboard | CatChain</title>
       </Head>
 
       <div className="mx-auto max-w-7xl w-full">

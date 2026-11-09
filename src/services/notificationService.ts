@@ -20,8 +20,8 @@ import { notificationsAPI } from '@/lib/api/notificationsAPI';
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-const HISTORY_KEY = 'petchain-notification-history';
-const PREFS_KEY = 'petchain-notif-prefs';
+const HISTORY_KEY = 'catchain-notification-history';
+const PREFS_KEY = 'catchain-notif-prefs';
 const MAX_HISTORY = 100;
 const QUEUE_INTERVAL_MS = 5_000;
 
@@ -415,7 +415,7 @@ export class NotificationService {
   async test(): Promise<boolean> {
     const status = await this.requestPermission();
     if (!status.granted) return false;
-    this.enqueue('success', 'PetChain Notifications', 'Notifications are working!', {
+    this.enqueue('success', 'CatChain Notifications', 'Notifications are working!', {
       duration: 3_000,
     });
     return true;

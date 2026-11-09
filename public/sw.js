@@ -1,4 +1,4 @@
-// PetChain Service Worker
+// CatChain Service Worker
 //
 // Caching policy:
 //   • Static assets (JS, CSS, images, fonts, offline page) → Cache-first via STATIC_CACHE
@@ -11,8 +11,8 @@
 // Offline pet data for authenticated users is served by the IndexedDB sync
 // layer (src/lib/offline/syncManager.ts), not by the SW cache.
 
-const STATIC_CACHE = 'petchain-static-v1';
-const DYNAMIC_CACHE = 'petchain-dynamic-v1';
+const STATIC_CACHE = 'catchain-static-v1';
+const DYNAMIC_CACHE = 'catchain-dynamic-v1';
 const ALL_CACHES = [STATIC_CACHE, DYNAMIC_CACHE];
 
 // Only these paths are pre-cached on install. Keep this list minimal and

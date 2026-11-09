@@ -1,7 +1,7 @@
 /**
  * RecurringPaymentAPI
  *
- * Responsibility: Client transport layer between the frontend and PetChain backend
+ * Responsibility: Client transport layer between the frontend and CatChain backend
  * for recurring Stellar payment intents, spending caps, next execution times,
  * authorization checks, and cancellation before signing.
  *

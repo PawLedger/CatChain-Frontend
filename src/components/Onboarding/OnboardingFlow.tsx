@@ -118,7 +118,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({
           </div>
           <h2 className={styles.completionTitle}>You&apos;re all set!</h2>
           <p className={styles.completionSubtitle}>
-            Welcome to PetChain. Your pet&apos;s health records are now secured on the blockchain.
+            Welcome to CatChain. Your pet&apos;s health records are now secured on the blockchain.
           </p>
 
           {analytics && (
@@ -261,7 +261,7 @@ function WelcomeStep() {
       <div className={styles.stepIconWrap} style={{ background: '#eff6ff' }}>
         <Sparkles size={32} color="#2563eb" />
       </div>
-      <h2 className={styles.stepTitle}>Welcome to PetChain</h2>
+      <h2 className={styles.stepTitle}>Welcome to CatChain</h2>
       <p className={styles.stepDescription}>
         Secure your pet&apos;s medical records on the blockchain. Let&apos;s get you set up in just
         a few steps.
@@ -343,7 +343,7 @@ function ExploreStep() {
       <div className={styles.stepIconWrap} style={{ background: '#fff1f2' }}>
         <Compass size={32} color="#e11d48" />
       </div>
-      <h2 className={styles.stepTitle}>Explore PetChain</h2>
+      <h2 className={styles.stepTitle}>Explore CatChain</h2>
       <p className={styles.stepDescription}>You&apos;re ready! Here&apos;s what you can do next.</p>
       <div className={styles.featureList}>
         <FeatureItem

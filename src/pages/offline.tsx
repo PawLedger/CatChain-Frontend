@@ -40,12 +40,12 @@ export default function OfflinePage() {
   return (
     <>
       <Head>
-        <title>Offline - PetChain</title>
+        <title>Offline - CatChain</title>
       </Head>
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-green-50 flex flex-col items-center justify-center px-4 text-center">
         <Image
-          src="/PETCHAIN.jpeg"
-          alt="PetChain"
+          src="/CATCHAIN.jpeg"
+          alt="CatChain"
           width={80}
           height={80}
           className="rounded-2xl shadow-lg mb-6"

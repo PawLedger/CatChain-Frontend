@@ -90,8 +90,8 @@ export default function RegisterPage() {
         {/* Logo */}
         <div className="flex flex-col items-center gap-3">
           <Image
-            src="/PETCHAIN.jpeg"
-            alt="PetChain"
+            src="/CATCHAIN.jpeg"
+            alt="CatChain"
             width={64}
             height={64}
             className="rounded-2xl shadow-md"

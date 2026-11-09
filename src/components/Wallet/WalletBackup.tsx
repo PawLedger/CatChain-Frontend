@@ -66,7 +66,7 @@ export default function WalletBackup({ wallet, serverWalletId, onExportBackup }:
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `petchain-wallet-backup-${wallet!.label.replace(/\s+/g, '-')}-${Date.now()}.json`;
+      a.download = `catchain-wallet-backup-${wallet!.label.replace(/\s+/g, '-')}-${Date.now()}.json`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);

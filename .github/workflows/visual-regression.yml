@@ -86,7 +86,7 @@ jobs:
         run: npm run build
         env:
           # Provide stub env vars so Next.js can build without real services
-          NEXT_PUBLIC_APP_NAME: PetChain
+          NEXT_PUBLIC_APP_NAME: CatChain
           NEXT_PUBLIC_APP_URL: http://localhost:3000
           NEXT_PUBLIC_API_URL: http://localhost:3001
           NEXT_PUBLIC_API_VERSION: v1
@@ -98,7 +98,7 @@ jobs:
         run: npm start &
         env:
           PORT: 3000
-          NEXT_PUBLIC_APP_NAME: PetChain
+          NEXT_PUBLIC_APP_NAME: CatChain
           NEXT_PUBLIC_APP_URL: http://localhost:3000
           NEXT_PUBLIC_API_URL: http://localhost:3001
           NEXT_PUBLIC_API_VERSION: v1
@@ -170,7 +170,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          NEXT_PUBLIC_APP_NAME: PetChain
+          NEXT_PUBLIC_APP_NAME: CatChain
           NEXT_PUBLIC_APP_URL: http://localhost:3000
           NEXT_PUBLIC_API_URL: http://localhost:3001
           NEXT_PUBLIC_API_VERSION: v1
@@ -181,7 +181,7 @@ jobs:
         run: npm start &
         env:
           PORT: 3000
-          NEXT_PUBLIC_APP_NAME: PetChain
+          NEXT_PUBLIC_APP_NAME: CatChain
           NEXT_PUBLIC_APP_URL: http://localhost:3000
           NEXT_PUBLIC_API_URL: http://localhost:3001
           NEXT_PUBLIC_API_VERSION: v1

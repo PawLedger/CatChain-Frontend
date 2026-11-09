@@ -14,7 +14,7 @@ export default function AdminSMSPage() {
   return (
     <ProtectedRoute requireAdmin>
       <Head>
-        <title>SMS Dashboard | PetChain Admin</title>
+        <title>SMS Dashboard | CatChain Admin</title>
       </Head>
       <div className={styles.container}>
         <SMSDashboard />

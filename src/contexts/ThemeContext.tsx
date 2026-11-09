@@ -17,7 +17,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // Read from localStorage first, then fall back to system preference
-    const stored = localStorage.getItem('petchain-theme') as Theme | null;
+    const stored = localStorage.getItem('catchain-theme') as Theme | null;
     if (stored && ['light', 'dark', 'high-contrast'].includes(stored)) {
       applyTheme(stored);
       setThemeState(stored);
@@ -38,7 +38,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     // Listen for system preference changes (only if user hasn't overridden)
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = (e: MediaQueryListEvent) => {
-      const stored = localStorage.getItem('petchain-theme');
+      const stored = localStorage.getItem('catchain-theme');
       if (!stored) {
         const newTheme: Theme = e.matches ? 'dark' : 'light';
         applyTheme(newTheme);
@@ -54,7 +54,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   };
 
   const setTheme = (t: Theme) => {
-    localStorage.setItem('petchain-theme', t);
+    localStorage.setItem('catchain-theme', t);
     applyTheme(t);
     setThemeState(t);
   };

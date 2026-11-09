@@ -367,10 +367,41 @@ export const AccountSettings: React.FC<AccountSettingsProps> = ({
           Your account will be temporarily disabled. You can reactivate it anytime by
           logging in again.
         </p>
+        <div className={styles.modalForm}>
+          <div className={styles.formGroup}>
+            <label className={styles.label}>Password</label>
+            <input
+              type="password"
+              className={styles.input}
+              placeholder="Enter your password"
+              value={deactivatePassword}
+              onChange={(e) => setDeactivatePassword(e.target.value)}
+              disabled={isSubmitting}
+            />
+          </div>
+          {isTwoFactorEnabled && (
+            <div className={styles.formGroup}>
+              <label className={styles.label}>Two-Factor Code</label>
+              <input
+                type="text"
+                className={styles.input}
+                placeholder="Enter your authenticator code"
+                maxLength={6}
+                value={deactivateTotpToken}
+                onChange={(e) => setDeactivateTotpToken(e.target.value.replace(/\D/g, '').slice(0, 6))}
+                disabled={isSubmitting}
+              />
+            </div>
+          )}
+        </div>
         <div className={styles.modalActions}>
           <button
             className={styles.cancelBtn}
-            onClick={() => setShowDeactivateModal(false)}
+            onClick={() => {
+              setShowDeactivateModal(false);
+              setDeactivatePassword('');
+              setDeactivateTotpToken('');
+            }}
             disabled={isSubmitting}
           >
             Cancel
@@ -378,66 +409,10 @@ export const AccountSettings: React.FC<AccountSettingsProps> = ({
           <button
             className={styles.confirmDangerBtn}
             onClick={handleDeactivate}
-            disabled={isSubmitting}
+            disabled={isSubmitting || !deactivatePassword || (isTwoFactorEnabled && !deactivateTotpToken)}
           >
             {isSubmitting ? 'Deactivating...' : 'Deactivate'}
           </button>
-      {showDeactivateModal && (
-        <div className={styles.modal}>
-          <div className={styles.modalContent}>
-            <h3>Deactivate Account?</h3>
-            <p>
-              Your account will be temporarily disabled. You can reactivate it anytime by logging in
-              again.
-            </p>
-            <div className={styles.modalForm}>
-              <div className={styles.formGroup}>
-                <label className={styles.label}>Password</label>
-                <input
-                  type="password"
-                  className={styles.input}
-                  placeholder="Enter your password"
-                  value={deactivatePassword}
-                  onChange={(e) => setDeactivatePassword(e.target.value)}
-                  disabled={isSubmitting}
-                />
-              </div>
-              {isTwoFactorEnabled && (
-                <div className={styles.formGroup}>
-                  <label className={styles.label}>Two-Factor Code</label>
-                  <input
-                    type="text"
-                    className={styles.input}
-                    placeholder="Enter your authenticator code"
-                    maxLength={6}
-                    value={deactivateTotpToken}
-                    onChange={(e) => setDeactivateTotpToken(e.target.value.replace(/\D/g, '').slice(0, 6))}
-                    disabled={isSubmitting}
-                  />
-                </div>
-              )}
-            </div>
-            <div className={styles.modalActions}>
-              <button
-                className={styles.cancelBtn}
-                onClick={() => {
-                  setShowDeactivateModal(false);
-                  setDeactivatePassword('');
-                  setDeactivateTotpToken('');
-                }}
-                disabled={isSubmitting}
-              >
-                Cancel
-              </button>
-              <button
-                className={styles.confirmDangerBtn}
-                onClick={handleDeactivate}
-                disabled={isSubmitting || !deactivatePassword || (isTwoFactorEnabled && !deactivateTotpToken)}
-              >
-                {isSubmitting ? 'Deactivating...' : 'Deactivate'}
-              </button>
-            </div>
-          </div>
         </div>
       </Dialog>
 
@@ -488,72 +463,6 @@ export const AccountSettings: React.FC<AccountSettingsProps> = ({
           >
             {isSubmitting ? 'Deleting...' : 'Delete Permanently'}
           </button>
-      {showDeleteModal && (
-        <div className={styles.modal}>
-          <div className={styles.modalContent}>
-            <h3>Delete Account Permanently?</h3>
-            <p>
-              This action cannot be undone. All your data will be permanently deleted after 30 days.
-              You will not be able to log in anymore.
-            </p>
-            <div className={styles.modalForm}>
-              <div className={styles.formGroup}>
-                <label className={styles.label}>Password</label>
-                <input
-                  type="password"
-                  className={styles.input}
-                  placeholder="Enter your password"
-                  value={deletePassword}
-                  onChange={(e) => setDeletePassword(e.target.value)}
-                  disabled={isSubmitting}
-                />
-              </div>
-              {isTwoFactorEnabled && (
-                <div className={styles.formGroup}>
-                  <label className={styles.label}>Two-Factor Code</label>
-                  <input
-                    type="text"
-                    className={styles.input}
-                    placeholder="Enter your authenticator code"
-                    maxLength={6}
-                    value={deleteTotpToken}
-                    onChange={(e) => setDeleteTotpToken(e.target.value.replace(/\D/g, '').slice(0, 6))}
-                    disabled={isSubmitting}
-                  />
-                </div>
-              )}
-              <p className={styles.warning}>Type "delete my account" below to confirm:</p>
-              <input
-                type="text"
-                className={styles.confirmInput}
-                placeholder="Type 'delete my account' to confirm"
-                value={deleteConfirmation}
-                onChange={(e) => setDeleteConfirmation(e.target.value)}
-                disabled={isSubmitting}
-              />
-            </div>
-            <div className={styles.modalActions}>
-              <button
-                className={styles.cancelBtn}
-                onClick={() => {
-                  setShowDeleteModal(false);
-                  setDeleteConfirmation('');
-                  setDeletePassword('');
-                  setDeleteTotpToken('');
-                }}
-                disabled={isSubmitting}
-              >
-                Cancel
-              </button>
-              <button
-                className={styles.deleteConfirmBtn}
-                onClick={handleDelete}
-                disabled={isSubmitting || deleteConfirmation.toLowerCase() !== 'delete my account' || !deletePassword || (isTwoFactorEnabled && !deleteTotpToken)}
-              >
-                {isSubmitting ? 'Deleting...' : 'Delete Permanently'}
-              </button>
-            </div>
-          </div>
         </div>
       </Dialog>
     </div>

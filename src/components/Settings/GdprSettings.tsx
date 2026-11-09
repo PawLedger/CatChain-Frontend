@@ -13,11 +13,11 @@ const CONSENT_LABELS: Record<ConsentType, { label: string; description: string }
   },
   analytics: {
     label: 'Analytics',
-    description: 'Help us improve PetChain by sharing anonymous usage data.',
+    description: 'Help us improve CatChain by sharing anonymous usage data.',
   },
   marketing: {
     label: 'Marketing',
-    description: 'Receive personalised tips, offers, and news about PetChain.',
+    description: 'Receive personalised tips, offers, and news about CatChain.',
   },
   data_sharing: {
     label: 'Data Sharing',

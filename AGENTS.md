@@ -5,8 +5,8 @@
 This repository already exists on GitHub. Always clone it instead:
 
 ```bash
-git clone https://github.com/fairbid01/petChain-Frontend.git
-cd petChain-Frontend
+git clone https://github.com/fairbid01/catChain-Frontend.git
+cd catChain-Frontend
 ```
 
 ## Creating a new feature branch

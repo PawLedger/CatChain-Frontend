@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { surgeryAPI, Surgery, CreateSurgeryDto } from '../lib/api/surgeryAPI';
 import { petAPI } from '../lib/api/petAPI';
-import { SurgeryForm } from '../components/Surgery/SurgeryForm';
+import SurgeryForm from '../components/Surgery/SurgeryForm';
 import { SurgeryList } from '../components/Surgery/SurgeryList';
 import styles from '../styles/pages/SurgeriesPage.module.css';
 import { GetServerSideProps } from 'next';

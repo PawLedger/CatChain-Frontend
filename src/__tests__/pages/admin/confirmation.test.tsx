@@ -13,7 +13,7 @@ import AdminConfirmationDialog, {
 const mockAdminUser: AdminActionTarget = {
   id: 'user_42',
   displayName: 'Alice Johnson',
-  email: 'alice@petchain.com',
+  email: 'alice@catchain.com',
   role: 'user',
 };
 
@@ -56,7 +56,7 @@ describe('Admin page integration – AdminConfirmationDialog', () => {
 
       // Verify target info is displayed
       expect(screen.getByText('Alice Johnson')).toBeInTheDocument();
-      expect(screen.getByText('alice@petchain.com')).toBeInTheDocument();
+      expect(screen.getByText('alice@catchain.com')).toBeInTheDocument();
       expect(screen.getByText('user')).toBeInTheDocument();
 
       // Verify action details

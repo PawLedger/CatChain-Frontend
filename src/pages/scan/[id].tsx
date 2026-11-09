@@ -127,7 +127,7 @@ export default function ScanPage({
   return (
     <div className="min-h-screen bg-red-50">
       <Head>
-        <title>Pet Emergency Tag — PetChain</title>
+        <title>Pet Emergency Tag — CatChain</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
@@ -159,7 +159,7 @@ export default function ScanPage({
             <p className="font-black text-gray-700 text-lg uppercase">No Emergency Info Set Up</p>
             <p className="text-gray-500 text-sm mt-2">
               The owner of this pet has not yet configured emergency contacts or vet information.
-              If this is your pet, please update your emergency info in the PetChain app.
+              If this is your pet, please update your emergency info in the CatChain app.
             </p>
           </div>
         )}
@@ -303,7 +303,7 @@ export default function ScanPage({
           <div className="flex items-center justify-center gap-2 text-gray-400 mb-2">
             <Dna size={16} />
             <span className="font-black tracking-widest text-xs uppercase">
-              Verified by PetChain
+              Verified by CatChain
             </span>
           </div>
           <p className="text-[10px] text-gray-400 font-bold max-w-[200px] mx-auto uppercase">

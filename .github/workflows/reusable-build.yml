@@ -27,7 +27,7 @@ on:
         description: 'Docker image name'
         required: false
         type: string
-        default: 'petchain-frontend'
+        default: 'catchain-frontend'
       docker-tag:
         description: 'Docker image tag'
         required: false

@@ -127,7 +127,7 @@ describe('AuthContext', () => {
     });
 
     it('clears wallet data from localStorage on logout', async () => {
-      localStorage.setItem('petchain_wallets', JSON.stringify([{ id: 'wallet-1' }]));
+      localStorage.setItem('catchain_wallets', JSON.stringify([{ id: 'wallet-1' }]));
 
       (global.fetch as jest.Mock)
         .mockResolvedValueOnce({
@@ -149,7 +149,7 @@ describe('AuthContext', () => {
         await result.current.logout();
       });
 
-      expect(localStorage.getItem('petchain_wallets')).toBeNull();
+      expect(localStorage.getItem('catchain_wallets')).toBeNull();
     });
 
     it('clears auth even when logout API call fails and shows a warning banner', async () => {

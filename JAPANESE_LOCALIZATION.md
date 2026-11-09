@@ -1,7 +1,7 @@
 # Japanese Localization Implementation Summary
 
 ## Overview
-Successfully implemented complete Japanese localization for the petChain-Frontend application, restoring functionality to serve Japan's large and active crypto community.
+Successfully implemented complete Japanese localization for the catChain-Frontend application, restoring functionality to serve Japan's large and active crypto community.
 
 ## Implementation Details
 
